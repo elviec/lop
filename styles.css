@@ -1,4 +1,6 @@
 html, body {
+  display:flex; 
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: 'Pangolin', cursive;
@@ -8,7 +10,6 @@ html, body {
 .container {
   position: relative;
   display: flex;
-  margin-top: 10vh;
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
@@ -17,8 +18,6 @@ html, body {
 .center-box {
   background-color: blanchedalmond;
   text-align: center;
-  height: 90vh;
-  width: 80vw;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -26,20 +25,10 @@ html, body {
 }
 
 @media only screen 
-  and (max-device-width: 800px) 
- {
-  .center-box{
-    height: 70vh;
-    width: 80vw;
-  }
-}
-
-@media only screen 
   and (max-device-width: 500px) 
  {
   .center-box{
-    height: 50vh;
-    width: 80vw;
+    width: 100%;
   }
 }
 *:focus {outline:none !important}
@@ -53,12 +42,16 @@ input[type=text] {
   border-radius:10px;
 }
 
-.center-text {
-  text-align: center;
+@media only screen 
+  and (max-device-width: 500px) 
+ {
+  input[type=text] {
+    font-size: 2em;
+  }
 }
 
-#title {
-  display: none;
+.center-text {
+  text-align: center;
 }
 
 img {
@@ -71,9 +64,8 @@ img {
   and (max-device-width: 500px) 
  {
   img {
-    width: 70px;
-    height: 70px;
-    vertical-align: bottom;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -83,17 +75,28 @@ button {
   border:none;
   background-color: tomato;
   color:#fff;
-  font-size: 2em;
+  font-size: 1.2em;
   border-radius:5px;
-  width:60%;
+  width:30%;
+  cursor: pointer;
 }
 
 .estimated-points {
   font-size: 2.5em;
 }
 
+.overlay {
+  display: hidden;
+}
+
+.total {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
 .note {
-  background-color: #fff;
+  margin-top:auto; 
+  background-color: #D3D3D3;
   padding: 20px;
   font-size: 1.2em;
 }
