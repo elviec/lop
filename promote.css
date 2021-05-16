@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to {
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+.grid-container {
+  display: grid;
+  justify-items: center;
+  align-items: baseline;
+  align-content: center;
+  border: 2px solid #f76707;
+  padding: 10px;
+  background-color: #f3e7e3;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 5px;
+  grid-template-areas:
+    "hat robe belt ."
+    "servant-hat servant-robe servant-belt servant-craft"
+    "steward-hat steward-robe steward-belt steward-craft"
+    "curator-hat curator-robe curator-belt curator-craft"
+    "deputy-hat deputy-robe deputy-belt deputy-craft"
+    "chief-hat chief-robe chief-belt chief-craft"
+    "archief-hat archief-robe archief-belt archief-craft";
+}
+
+@media only screen 
+  and (max-device-width: 500px) 
+ {
+  .grid-container {
+    max-width: 80vw;
+  }
+}
+
+.hat { grid-area: hat; }
+
+.robe { grid-area: robe; }
+
+.belt { grid-area: belt; }
+
+.servant { grid-area: servant; }
+
+.servant-hat { grid-area: servant-hat; }
+
+.servant-robe { grid-area: servant-robe; }
+
+.servant-belt { grid-area: servant-belt; }
+
+.servant-craft { grid-area: servant-craft; }
+
+.steward { grid-area: steward; }
+
+.steward-hat { grid-area: steward-hat; }
+
+.steward-robe { grid-area: steward-robe; }
+
+.steward-belt { grid-area: steward-belt; }
+
+.steward-craft { grid-area: steward-craft; }
+
+.curator { grid-area: curator; }
+
+.curator-hat { grid-area: curator-hat; }
+
+.curator-robe { grid-area: curator-robe; }
+
+.curator-belt { grid-area: curator-belt; }
+
+.curator-craft { grid-area: curator-craft; }
+
+.deputy { grid-area: deputy; }
+
+.deputy-hat { grid-area: deputy-hat; }
+
+.deputy-robe { grid-area: deputy-robe; }
+
+.deputy-belt { grid-area: deputy-belt; }
+
+.deputy-craft { grid-area: deputy-craft; }
+
+.chief { grid-area: chief; }
+
+.chief-hat { grid-area: chief-hat; }
+
+.chief-robe { grid-area: chief-robe; }
+
+.chief-belt { grid-area: chief-belt; }
+
+.chief-craft { grid-area: chief-craft; }
+
+.archief { grid-area: archief; }
+
+.archief-hat { grid-area: archief-hat; }
+
+.archief-robe { grid-area: archief-robe; }
+
+.archief-belt { grid-area: archief-belt; }
+
+.archief-craft { grid-area: archief-craft; }
+
+img {
+  width: 80px;
+  height: 80px;
+  vertical-align: bottom;
+}
+
+input[type=text] {
+  font-size: 2em;
+  text-align: center;
+  width: 60px;
+  padding: 10px;
+  margin: 5px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:5px;
+}
+
+*:focus {outline:none !important}
+
+button {
+  width: 80px;
+  margin: 5px;
+  padding:10px;
+  border:none;
+  background-color: tomato;
+  color:#fff;
+  font-size: 1.5em;
+  border-radius:5px;
+}
+
+.clear-all {
+  width: 150px;
+  text-align: center;
+}
+
+.coffee {
+  border: 0;
+  height: 50px;
+  width: 160px;
+}
+
+.footer {
+  font-size: 0.8em;
+  margin-top: 30px;
+}
