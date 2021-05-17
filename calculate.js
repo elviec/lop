@@ -441,7 +441,7 @@ function intimacy() {
 
   let sum = 0;
 
-  for (i=from; i<=to; i++) {
+  for (i=from; i<=to-1; i++) {
     sum = sum + table[i];
   }
 
