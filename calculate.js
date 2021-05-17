@@ -419,8 +419,8 @@ function calculate() {
   const estimatedPoints = document.getElementById('estimated');
   const title = document.getElementById('title');
   if(blessingExp > 0){
-    const realistic = 125 * blessing;
-    const optimistic = 200 * blessing;
+    const realistic = 90 * blessing;
+    const optimistic = 130 * blessing;
 
     title.innerText = '*Projected Intimacy Points'
     estimatedPoints.innerText = `${totalJadePoints + realistic} (realistic) - ${totalJadePoints + optimistic} (optimistic)`;
