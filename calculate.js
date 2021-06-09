@@ -409,29 +409,32 @@ function calculate() {
   const agateJade = document.getElementById('agate').value | 0;
   const hetianJade = document.getElementById('hetian').value | 0;
   const blessing = document.getElementById('blessing').value | 0;
+  const stamina = document.getElementById('stamina').value | 0;
 
   const whiteJadeExp = 10 * whiteJade;
   const agateJadeExp = 50 * agateJade;
   const hetianJadeExp = 100 * hetianJade;
   const blessingExp = 125 * blessing;
+  const staminaExp = 50 * stamina;
 
-  const totalJadePoints = whiteJadeExp + agateJadeExp + hetianJadeExp;
+  const totalJadePoints = whiteJadeExp + agateJadeExp + hetianJadeExp + staminaExp;
   const estimatedPoints = document.getElementById('estimated');
   const title = document.getElementById('title');
+
   if(blessingExp > 0){
     const realistic = 90 * blessing;
     const optimistic = 130 * blessing;
 
-    title.innerText = '*Projected Intimacy Points'
+    title.innerText = '*Estimated Intimacy Points'
     estimatedPoints.innerText = `${totalJadePoints + realistic} (realistic) - ${totalJadePoints + optimistic} (optimistic)`;
     document.getElementsByClassName("overlay")[0].style.display = "block"
    
   } else {
-    title.innerText = 'Total Intimacy Points'
+    title.innerText = 'Estimated Intimacy Points'
     estimatedPoints.innerText = totalJadePoints;
     document.getElementsByClassName("overlay")[0].style.display = "block"
-
   }
+
 }
 
 function intimacy() {
