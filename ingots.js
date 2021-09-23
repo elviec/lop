@@ -20,7 +20,7 @@ function calculate() {
   let labourTotal = 0;
   let monthlyTotal = 0;
   let lifetimeTotal = 0;
-  let buildDeduct = 0;
+  let buildTotal = 0;
 
   if (monthly) {
     monthlyTotal = 100 * daysPerCycle;
@@ -35,22 +35,34 @@ function calculate() {
   }
 
   if (building > 0) {
-    switch (building) {
-      case "10":
-        buildDeduct = -(10 * daysPerCycle);
-        break;
-      case "50":
-        buildDeduct = -(50 * daysPerCycle);
-        break;
-      case "200":
-        buildDeduct = -(200 * daysPerCycle);
+    if (palace) {
+      switch (building) {
+        case "10":
+          buildTotal = 10 * (daysPerCycle - 5) + 1000;
+          break;
+        case "50":
+          buildTotal = 50 * (daysPerCycle - 5) + 1000;
+          break;
+        case "200":
+          buildTotal = 200 * (daysPerCycle - 5) + 1000;
+          break;
+      }
+    } else {
+      switch (building) {
+        case "10":
+          buildTotal = 10 * daysPerCycle;
+          break;
+        case "50":
+          buildTotal = 50 * daysPerCycle;
+          break;
+        case "200":
+          buildTotal = 200 * daysPerCycle;
+          break;
+      }
     }
   }
 
-  if (palace) {
-    buildDeduct = buildDeduct - 1000;
-  }
-
+  console.log(buildTotal);
   toggleModal();
 
   grandTotal =
@@ -61,8 +73,8 @@ function calculate() {
     perksTotal +
     labourTotal +
     weeklySalary +
-    weeklyShare +
-    buildDeduct;
+    weeklyShare -
+    buildTotal;
 
   print(grandTotal);
 }
