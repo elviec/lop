@@ -1,0 +1,147 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>
+      Ingots Calculator | Estimate Ingots You can save from Legend of Phoenix
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ingots Calculator : How much ingots I can save from Legend of Phoenix?"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      rel="stylesheet"
+    />
+    <script src="ingots.js"></script>
+  </head>
+  <body>
+    <div class="container is-fluid">
+      <h1 class="title">Ingots Calculator</h1>
+      <div class="column is-one-third">
+        <div class="field">
+          <label class="label">Kunningkong</label>
+          <div class="control">
+            <input class="input" id="kunningkong" type="number" />
+          </div>
+          <p class="help">Number of ingots you earn from greeting per day.</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Marriages during Dominant</label>
+          <div class="control">
+            <input class="input" id="marriage" type="number" />
+          </div>
+          <p class="help">Number of kids to be married off.</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Story Chapter</label>
+          <div class="control">
+            <input class="input" id="chapter" type="number" />
+          </div>
+          <p class="help">Number of story chapters you may clear.</p>
+        </div>
+
+        <div class="pb-3">
+          Other factors that affects income, toggle checkboxes to include them.
+        </div>
+        <div class="field">
+          <label class="checkbox">
+            <input type="checkbox" id="monthly" />
+            Monthly Pass
+          </label>
+        </div>
+
+        <div class="field">
+          <label class="checkbox is-rounded">
+            <input type="checkbox" id="lifetime" />
+            Lifetime Pass
+          </label>
+        </div>
+
+        <div class="field">
+          <label class="checkbox">
+            <input type="checkbox" id="labour" checked="checked" />
+            Hard Labour Camp
+          </label>
+        </div>
+
+        <div class="field">
+          <div class="select">
+            <select id="building">
+              <option value="0">Daily Guild Building</option>
+              <option value="10">Basic Building (10 ingots)</option>
+              <option value="50">Intermediate Building (50 ingots)</option>
+              <option value="200">Advanced Building (200 ingots)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="checkbox">
+            <input type="checkbox" id="palace" checked="checked" />
+            Advanced Building during Guild EXP
+          </label>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-link mt-2" onClick="calculate()">
+              Calculate
+            </button>
+          </div>
+        </div>
+
+        <div class="modal" id="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Projected income is:</p>
+              <button
+                class="delete"
+                aria-label="close"
+                onClick="toggleModal()"
+              ></button>
+            </header>
+            <section class="modal-card-body">
+              <h1
+                class="is-size-5 has-text-weight-bold"
+                id="incomePerCycle"
+              ></h1>
+              <p class="is-size-6" id="averagePerDay">
+                You earn an average of 100 ingots per day.
+              </p>
+              <p class="is-size-6" id="average30">
+                Your estimated income over 30 days is 3000 ingots
+              </p>
+              <p class="is-size-6" id="average60">
+                Your estimated income over 60 days is 6000 ingots
+              </p>
+              <hr />
+              <p class="is-italic">
+                Number is derived from the following projections:
+              </p>
+              <p>Marriages during Dominant - 20 ingots per marriage</p>
+              <p>Story Chapters - 100 ingots per chapter cleared</p>
+              <p>Monthly Pass - 100 ingots per day</p>
+              <p>Lifetime Pass - 120 ingots per day</p>
+              <p>Daily Worship - 70 ingots per day</p>
+              <p>Perks/VIP Login - 100 ingots every 5 days</p>
+              <p>Hard Labour Camp - 30 ingots per day</p>
+              <p>Weekly Salary - 50 ingots per week</p>
+              <p>Weekly Facebook Share - 50 ingots per week</p>
+            </section>
+            <footer class="modal-card-foot">
+              Made with Love by Elvie S.53 in collaboration with
+              <a href="https://discord.gg/cjwnd8dCQY"
+                >LOP Unofficial Community</a
+              >
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
