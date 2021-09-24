@@ -48,7 +48,7 @@ function print(grandTotal) {
   const average = parseInt(grandTotal / daysPerCycle);
 
   incomePerCycle.innerText =
-    grandTotal + " Ingots over " + daysPerCycle + " days.";
+    grandTotal + " ingots over " + daysPerCycle + " days.";
 
   averagePerDay.innerText =
     "You earn an average of " + average + " ingots per day";
