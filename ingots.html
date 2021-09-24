@@ -14,6 +14,20 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <script src="ingots.js"></script>
   </head>
   <body>
@@ -139,17 +153,100 @@
               </p>
               <hr />
               <p class="is-italic">
-                Number is derived from the following projections:
+                Calculation is based on the following projections:
               </p>
-              <p>Marriages during Dominant - 20 ingots per marriage</p>
-              <p>Story Chapters - 100 ingots per chapter cleared</p>
-              <p>Monthly Pass - 100 ingots per day</p>
-              <p>Lifetime Pass - 120 ingots per day</p>
-              <p>Daily Worship - 70 ingots per day</p>
-              <p>Perks/VIP Login - 100 ingots every 5 days</p>
-              <p>Hard Labour Camp - 30 ingots per day</p>
-              <p>Weekly Salary - 50 ingots per week</p>
-              <p>Weekly Facebook Share - 50 ingots per week</p>
+
+              <div class="icon-text">
+                <span class="has-text-left">Marriages</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="20 ingots per marriage"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Story Chapters</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="100 ingots per cleared chapter"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Monthly Pass</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="100 ingots per day"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Lifetime Pass</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="120 ingots per day"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Daily Worship</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="70 ingots per day"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Perks/VIP Login</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="100 ingots every 5 days"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Hard Labour Camp</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="Estimated earning of 30 ingots per day"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Weekly Salary</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="50 ingots per week"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+
+              <div class="icon-text">
+                <span>Weekly FB Share</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="50 ingots per week"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+              <div class="icon-text">
+                <span>Guild Building Cost</span>
+                <span
+                  class="icon has-text-info"
+                  data-tooltip="Deduct guild building cost"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
             </section>
             <footer class="modal-card-foot">
               Made with Love by Elvie S.53 in collaboration with

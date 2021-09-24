@@ -20,7 +20,8 @@ function calculate() {
   let labourTotal = 0;
   let monthlyTotal = 0;
   let lifetimeTotal = 0;
-  let buildTotal = 0;
+  let dailyBuild = 0;
+  const palaceBuild = palace ? getPalaceBuildCost(building) : 0;
 
   if (monthly) {
     monthlyTotal = 100 * daysPerCycle;
@@ -35,35 +36,18 @@ function calculate() {
   }
 
   if (building > 0) {
-    if (palace) {
-      switch (building) {
-        case "10":
-          buildTotal = 10 * (daysPerCycle - 5) + 1000;
-          break;
-        case "50":
-          buildTotal = 50 * (daysPerCycle - 5) + 1000;
-          break;
-        case "200":
-          buildTotal = 200 * (daysPerCycle - 5) + 1000;
-          break;
-      }
-    } else {
-      switch (building) {
-        case "10":
-          buildTotal = 10 * daysPerCycle;
-          break;
-        case "50":
-          buildTotal = 50 * daysPerCycle;
-          break;
-        case "200":
-          buildTotal = 200 * daysPerCycle;
-          break;
-      }
+    switch (building) {
+      case "10":
+        dailyBuild = 10 * daysPerCycle;
+        break;
+      case "50":
+        dailyBuild = 50 * daysPerCycle;
+        break;
+      case "200":
+        dailyBuild = 200 * daysPerCycle;
+        break;
     }
   }
-
-  console.log(buildTotal);
-  toggleModal();
 
   grandTotal =
     greetingsTotal +
@@ -71,12 +55,16 @@ function calculate() {
     chapterTotal +
     worshipTotal +
     perksTotal +
+    monthlyTotal +
+    lifetimeTotal +
     labourTotal +
     weeklySalary +
     weeklyShare -
-    buildTotal;
+    dailyBuild -
+    palaceBuild;
 
   print(grandTotal);
+  toggleModal();
 }
 
 function print(grandTotal) {
@@ -98,4 +86,13 @@ function print(grandTotal) {
 function toggleModal() {
   const modal = document.querySelector(".modal");
   modal.classList.toggle("is-active");
+}
+
+function getPalaceBuildCost(building) {
+  const buildCost = 200 - building;
+  if (buildCost > 0) {
+    return buildCost * 5;
+  } else {
+    return 0;
+  }
 }
