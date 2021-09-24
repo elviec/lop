@@ -16,40 +16,13 @@ function calculate() {
   const perksTotal = 400;
   const weeklySalary = 200;
   const weeklyShare = 200;
-  let grandTotal = 0;
-  let labourTotal = 0;
-  let monthlyTotal = 0;
-  let lifetimeTotal = 0;
-  let dailyBuild = 0;
+  const labourTotal = labour ? 30 * daysPerCycle : 0;
+  const monthlyTotal = monthly ? 100 * daysPerCycle : 0;
+  const lifetimeTotal = lifetime ? 120 * daysPerCycle : 0;
+  const dailyBuild = building > 0 ? building * daysPerCycle : 0;
   const palaceBuild = palace ? getPalaceBuildCost(building) : 0;
 
-  if (monthly) {
-    monthlyTotal = 100 * daysPerCycle;
-  }
-
-  if (lifetime) {
-    lifetimeTotal = 120 * daysPerCycle;
-  }
-
-  if (labour) {
-    labourTotal = 30 * daysPerCycle;
-  }
-
-  if (building > 0) {
-    switch (building) {
-      case "10":
-        dailyBuild = 10 * daysPerCycle;
-        break;
-      case "50":
-        dailyBuild = 50 * daysPerCycle;
-        break;
-      case "200":
-        dailyBuild = 200 * daysPerCycle;
-        break;
-    }
-  }
-
-  grandTotal =
+  const grandTotal =
     greetingsTotal +
     marriageTotal +
     chapterTotal +
