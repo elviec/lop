@@ -1,10 +1,7 @@
 <!-- index.html -->
 <html>
   <head>
-    <title>
-      Ingots Calculator | Estimate ingots you can save from Legend of Phoenix in
-      a cycle
-    </title>
+    <title>Ingots Calculator | Ingots Health Check | Savings Estimator</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -32,240 +29,427 @@
     <script src="ingots.js"></script>
   </head>
   <body>
-    <div class="container is-fluid">
-      <h1 class="title">Ingots Calculator</h1>
-      <div class="column is-one-third">
-        <div class="field">
-          <label class="label">Kunninggong</label>
-          <div class="control">
-            <input
-              class="input"
-              id="kunningkong"
-              type="number"
-              min="0"
-              pattern="[0-9]*"
-            />
+    <div>
+      <h1 class="title has-text-centered">Ingots Calculator</h1>
+
+      <div class="container mt-4 mb-4">
+        <fieldset class="box">
+          <legend class="label">Daily</legend>
+          <div class="field mb-5">
+            <label class="label">Kunninggong</label>
+            <div class="control">
+              <input
+                class="input"
+                id="kunningkong"
+                type="number"
+                min="0"
+                pattern="[0-9]*"
+              />
+            </div>
+            <p class="help">Number of ingots you earn from greeting per day.</p>
           </div>
-          <p class="help">Number of ingots you earn from greeting per day.</p>
-        </div>
-
-        <div class="field">
-          <label class="label">Marriages during Dominant</label>
-          <div class="control">
-            <input
-              class="input"
-              id="marriage"
-              type="number"
-              min="0"
-              pattern="[0-9]*"
-            />
+          <div class="field">
+            <label class="checkbox">
+              <input type="checkbox" id="monthly" />
+              Monthly Pass (100 ingots)
+            </label>
           </div>
-          <p class="help">Number of kids to be married off.</p>
-        </div>
 
-        <div class="field">
-          <label class="label">Story Chapter</label>
-          <div class="control">
-            <input
-              class="input"
-              id="chapter"
-              type="number"
-              min="0"
-              pattern="[0-9]*"
-            />
+          <div class="field mb-5">
+            <label class="checkbox is-rounded">
+              <input type="checkbox" id="lifetime" />
+              Lifetime Pass (120 ingots)
+            </label>
           </div>
-          <p class="help">Number of story chapters you may clear.</p>
-        </div>
 
-        <div class="pb-3">
-          Other factors that affects income, toggle checkboxes to include them.
-        </div>
-        <div class="field">
-          <label class="checkbox">
-            <input type="checkbox" id="monthly" />
-            Monthly Pass
-          </label>
-        </div>
+          <div class="field mb-5">
+            Estimated 30 ingots income from Hard Labour Camp.
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="labour" value="1" checked />
+                Daily
+              </label>
 
-        <div class="field">
-          <label class="checkbox is-rounded">
-            <input type="checkbox" id="lifetime" />
-            Lifetime Pass
-          </label>
-        </div>
-
-        <div class="field">
-          <label class="checkbox">
-            <input type="checkbox" id="labour" checked="checked" />
-            Hard Labour Camp
-          </label>
-        </div>
-
-        <div class="field">
-          <div class="select">
-            <select id="building">
-              <option value="0">Daily Guild Building</option>
-              <option value="10">Basic Building (10 ingots)</option>
-              <option value="50">Intermediate Building (50 ingots)</option>
-              <option value="200">Advanced Building (200 ingots)</option>
-            </select>
+              <label class="radio">
+                <input type="radio" name="labour" value="2" />
+                Every 2 days.
+              </label>
+            </div>
           </div>
-        </div>
 
-        <div class="field">
-          <label class="checkbox">
-            <input type="checkbox" id="palace" checked="checked" />
-            Advanced Building during Guild EXP
-          </label>
-        </div>
+          <div class="field mb-5">
+            <div class="select">
+              <select id="building">
+                <option value="0">Daily Guild Building</option>
+                <option value="10">Basic Building (10 ingots)</option>
+                <option value="50">Intermediate Building (50 ingots)</option>
+                <option value="200">Advanced Building (200 ingots)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            Daily purchase of further edu tokens
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="edutokens" value="0" checked />
+                None
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="edutokens" value="1" />
+                Once
+              </label>
+              <label class="radio">
+                <input type="radio" name="edutokens" value="2" />
+                Twice
+              </label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            <div class="select">
+              <select id="academyslots">
+                <option value="0">Number of Academy Slots</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            Daily purchase of White Roses
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="0" checked />
+                None
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="10" />
+                10
+              </label>
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="20" />
+                20
+              </label>
+              <label class="radio">
+                <input type="radio" name="whiteroses" value="30" />
+                30
+              </label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            Daily purchase of Guild Token (VIP 5 & above)
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="guildtoken" value="1" />
+                Yes
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="guildtoken" value="0" checked />
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field mb-4">
+            <p>Daily purchase of extra turns in Fields</p>
+            <div class="select">
+              <select id="fieldTurns">
+                <option value="0">None</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="9">10</option>
+                <option value="9">11</option>
+                <option value="9">12</option>
+              </select>
+            </div>
+          </div>
+          <div class="field mb-4">
+            <p>Daily purchase of extra turns in Rare Beast Hunt</p>
+            <div class="select">
+              <select id="beastHuntTurns">
+                <option value="0">None</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="box">
+          <legend class="label">Cycle (24 days)</legend>
+          <div class="field">
+            <label class="label">Marriages during Dominant</label>
+            <div class="control">
+              <input
+                class="input"
+                id="marriage"
+                type="number"
+                min="0"
+                pattern="[0-9]*"
+              />
+            </div>
+            <p class="help">Number of kids to be married off.</p>
+          </div>
+
+          <div class="field">
+            <label class="label">Story Chapter</label>
+            <div class="control">
+              <input
+                class="input"
+                id="chapter"
+                type="number"
+                min="0"
+                pattern="[0-9]*"
+              />
+            </div>
+            <p class="help">
+              Number of story chapters you may clear in a cycle.
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="label">Banquet Hosting</label>
+            <div class="control">
+              <input
+                class="input"
+                id="smallBanquet"
+                type="number"
+                min="0"
+                pattern="[0-9]*"
+                placeholder="enter number of small banquet"
+              />
+            </div>
+            <p class="help">
+              Number of Small Banquets you might host per cycle.
+            </p>
+            <div class="control">
+              <input
+                class="input"
+                id="largeBanquet"
+                type="number"
+                min="0"
+                pattern="[0-9]*"
+                placeholder="enter number of large banquet"
+              />
+            </div>
+            <p class="help">
+              Number of Large Banquets you might host per cycle.
+            </p>
+          </div>
+
+          <div class="field mb-4">
+            <label class="checkbox">
+              <input type="checkbox" id="palace" checked="checked" />
+              Advanced Building during Palace Celebrity (5 days)
+            </label>
+          </div>
+        </fieldset>
 
         <div class="field">
           <div class="control">
-            <button class="button is-link mt-2" onClick="calculate()">
+            <button class="button is-link ml-4" onClick="calculate()">
               Calculate
             </button>
           </div>
         </div>
+      </div>
 
-        <div class="modal" id="modal">
-          <div class="modal-background"></div>
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Projected income is:</p>
-              <button
-                class="delete"
-                aria-label="close"
-                onClick="toggleModal()"
-              ></button>
-            </header>
-            <section class="modal-card-body">
-              <h1
-                class="is-size-5 has-text-weight-bold"
-                id="incomePerCycle"
-              ></h1>
-              <p class="is-size-6" id="averagePerDay">
-                You earn an average of 100 ingots per day.
-              </p>
-              <p class="is-size-6" id="average30">
-                Your estimated income over 30 days is 3000 ingots
-              </p>
-              <p class="is-size-6" id="average60">
-                Your estimated income over 60 days is 6000 ingots
-              </p>
-              <hr />
-              <p class="is-italic">
-                Calculation is based on the following projections:
-              </p>
+      <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Result:</p>
+            <button
+              class="delete"
+              aria-label="close"
+              onClick="toggleModal()"
+            ></button>
+          </header>
+          <section class="modal-card-body">
+            <h2 class="is-size-5 has-text-weight-bold">Daily</h2>
+            <p>
+              Max Potential Income : <span id="dailyMaxIncome">500 ingots</span>
+            </p>
+            <p>Min Spending : <span id="dailyMinSpending">200 ingots</span></p>
+            <h2 class="is-size-5 has-text-weight-bold">Weekly</h2>
+            <p>
+              Max Potential Income :
+              <span id="weeklyMaxIncome">500 ingots</span>
+            </p>
+            <p>Min Spending : <span id="weeklyMinSpending">200 ingots</span></p>
+            <h2 class="is-size-5 has-text-weight-bold">Cycle (24 days)</h2>
+            <p>
+              Max Potential Income : <span id="cycleMaxIncome">500 ingots</span>
+            </p>
+            <p>Min Spending : <span id="cycleMinSpending">200 ingots</span></p>
 
-              <div class="icon-text">
-                <span class="has-text-left">Marriages</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="20 ingots per marriage"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Story Chapters</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="100 ingots per cleared chapter"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Monthly Pass</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="100 ingots per day"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Lifetime Pass</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="120 ingots per day"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Daily Worship</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="70 ingots per day"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Perks/VIP Login</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="100 ingots every 5 days"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Hard Labour Camp</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="Estimated earning of 30 ingots per day"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Weekly Salary</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="50 ingots per week"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
+            <p class="is-size-5 has-text-weight-bold">
+              You could save <span id="cycleSaving">0</span> after 24 days.
+            </p>
+            <p class="is-size-6 has-text-weight-bold" id="status"></p>
+            <hr />
 
-              <div class="icon-text">
-                <span>Weekly FB Share</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="50 ingots per week"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-              <div class="icon-text">
-                <span>Guild Building Cost</span>
-                <span
-                  class="icon has-text-info"
-                  data-tooltip="Deduct guild building cost"
-                  onclick=""
-                >
-                  <i class="fas fa-info-circle"></i>
-                </span>
-              </div>
-            </section>
-            <footer class="modal-card-foot">
-              Made with Love by Elvie S.53 in collaboration with
-              <a href="https://discord.gg/cjwnd8dCQY"
-                >LOP Unofficial Community</a
+            <p class="mt-2 is-italic">Additional Info about your spending:</p>
+            <div>
+              Further Edu Tokens :
+              <span id="tokens">0</span> per week
+            </div>
+            <p>White Roses : <span id="whiteroses">0</span> per week</p>
+            <p>Field Extra Turns : <span id="fields">0</span> per week</p>
+            <p>Rare Beast Hunt: <span id="beasthunt">0</span> per week</p>
+            <p>
+              Banquet Hosting Cost: <span id="banquethostingcost">0</span> per
+              cycle
+            </p>
+            <hr />
+            <p class="is-italic">
+              Calculation is based on the following projections:
+            </p>
+
+            <h3 class="has-text-weight-bold">Daily Income:</h3>
+            <div class="icon-text">
+              <span>Kunninggong</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="amount you enter"
+                onclick=""
               >
-            </footer>
-          </div>
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Monthly Pass</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="100 ingots per day"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Lifetime Pass</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="120 ingots per day"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Daily Worship</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="70 ingots per day"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Timed Login</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="100 ingots every day"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Hard Labour Camp</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="30 ingots everyday or every 2 days"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <h3 class="has-text-weight-bold mt-2">Weekly Income</h3>
+            <div class="icon-text">
+              <span>Weekly Salary</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="50 ingots per week"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <div class="icon-text">
+              <span>Weekly FB Share</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="50 ingots per week"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+
+            <div class="icon-text">
+              <span>Perks/VIP Login</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="100 ingots every 5 days"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <h3 class="has-text-weight-bold mt-2">Cycle Income</h3>
+            <div class="icon-text">
+              <span class="has-text-left">Marriages</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="20 ingots per marriage"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+            <div class="icon-text">
+              <span>Story Chapters</span>
+              <span
+                class="icon has-text-info"
+                data-tooltip="100 ingots per cleared chapter"
+                onclick=""
+              >
+                <i class="fas fa-info-circle"></i>
+              </span>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            Made with Love by Elvie S.53 in collaboration with
+            <a href="https://discord.gg/cjwnd8dCQY">LOP Unofficial Community</a>
+          </footer>
         </div>
       </div>
     </div>
