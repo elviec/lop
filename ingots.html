@@ -111,6 +111,46 @@
             <div class="select">
               <select id="academyslots">
                 <option value="0">Number of Academy Slots</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            Daily purchase of Mailbox tokens (Pigeon Loft)
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="0" checked />
+                None
+              </label>
+
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="1" />
+                Once
+              </label>
+              <label class="radio">
+                <input type="radio" name="pigeontokens" value="2" />
+                Twice
+              </label>
+            </div>
+          </div>
+
+          <div class="field mb-5">
+            <div class="select">
+              <select id="pigeonslots">
+                <option value="0">Number of Pigeon Slots</option>
+                <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -294,19 +334,19 @@
               Max Potential Income : <span id="dailyMaxIncome">500 ingots</span>
             </p>
             <p>Min Spending : <span id="dailyMinSpending">200 ingots</span></p>
-            <h2 class="is-size-5 has-text-weight-bold">Weekly</h2>
+            <h2 class="is-size-5 has-text-weight-bold mt-2">Weekly</h2>
             <p>
               Max Potential Income :
               <span id="weeklyMaxIncome">500 ingots</span>
             </p>
             <p>Min Spending : <span id="weeklyMinSpending">200 ingots</span></p>
-            <h2 class="is-size-5 has-text-weight-bold">Cycle (24 days)</h2>
+            <h2 class="is-size-5 has-text-weight-bold mt-2">Cycle (24 days)</h2>
             <p>
               Max Potential Income : <span id="cycleMaxIncome">500 ingots</span>
             </p>
             <p>Min Spending : <span id="cycleMinSpending">200 ingots</span></p>
 
-            <p class="is-size-5 has-text-weight-bold">
+            <p class="is-size-5 has-text-weight-bold mt-2">
               You could save <span id="cycleSaving">0</span> after 24 days.
             </p>
             <p class="is-size-6 has-text-weight-bold" id="status"></p>
@@ -315,13 +355,21 @@
             <p class="mt-2 is-italic">Additional Info about your spending:</p>
             <div>
               Further Edu Tokens :
-              <span id="tokens">0</span> per week
+              <span id="edutokens">0</span> per week
+            </div>
+            <div>
+              Mailbox Tokens :
+              <span id="pigeontokens">0</span> per week
             </div>
             <p>White Roses : <span id="whiteroses">0</span> per week</p>
             <p>Field Extra Turns : <span id="fields">0</span> per week</p>
             <p>Rare Beast Hunt: <span id="beasthunt">0</span> per week</p>
             <p>
               Banquet Hosting Cost: <span id="banquethostingcost">0</span> per
+              cycle
+            </p>
+            <p>
+              Guild Building Cost: <span id="guildbuildingcost">0</span> per
               cycle
             </p>
             <hr />
@@ -418,7 +466,7 @@
               <span>Perks/VIP Login</span>
               <span
                 class="icon has-text-info"
-                data-tooltip="100 ingots every 5 days"
+                data-tooltip="100 ingots per week"
                 onclick=""
               >
                 <i class="fas fa-info-circle"></i>

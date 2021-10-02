@@ -11,10 +11,14 @@ function calculate() {
   const guildtoken = document.querySelector(
     "input[name=guildtoken]:checked"
   ).value;
-  const edutokens = document.querySelector(
-    "input[name=edutokens]:checked"
-  ).value;
+  const edutokens = parseInt(
+    document.querySelector("input[name=edutokens]:checked").value
+  );
   const slots = parseInt(document.querySelector("#academyslots").value);
+  const pigeontokens = parseInt(
+    document.querySelector("input[name=pigeontokens]:checked").value
+  );
+  const pigeonSlots = parseInt(document.querySelector("#pigeonslots").value);
   const whiteroses = parseInt(
     document.querySelector("input[name=whiteroses]:checked").value
   );
@@ -36,6 +40,8 @@ function calculate() {
   const dailyBuild = building ? building : 0;
   const dailyGuildTokenCost = guildtoken === "1" ? 100 : 0;
   const dailyEduTokensCost = edutokens && slots ? slots * edutokens * 10 : 0;
+  const dailyPigeonTokensCost =
+    pigeontokens && pigeonSlots ? pigeontokens * pigeonSlots * 10 : 0;
   const dailyWhiteRosesCost = whiteroses ? whiteroses * 10 : 0;
   const dailyBeastHuntCost = beastHuntTurns
     ? getDailyBeastHuntCost(beastHuntTurns)
@@ -82,6 +88,7 @@ function calculate() {
     minDailyExpenses * 3 +
     palaceBuild +
     banquetTotalCost;
+  const cycleBuildingCost = 24 * dailyBuild + palaceBuild;
 
   const result = {
     dailyIncome,
@@ -95,10 +102,12 @@ function calculate() {
   print(result);
   displayExpenses(
     dailyEduTokensCost,
+    dailyPigeonTokensCost,
     dailyWhiteRosesCost,
     dailyBeastHuntCost,
     weeklyFieldCost,
-    banquetTotalCost
+    banquetTotalCost,
+    cycleBuildingCost
   );
 
   toggleModal();
@@ -169,20 +178,26 @@ function getDailyBeastHuntCost(beastHuntTurns) {
 
 function displayExpenses(
   dailyEduTokensCost,
+  dailyPigeonTokensCost,
   dailyWhiteRosesCost,
   dailyBeastHuntCost,
   weeklyFieldCost,
-  banquetTotalCost
+  banquetTotalCost,
+  cycleBuildingCost
 ) {
-  const tokens = document.querySelector("#tokens");
+  const edutokens = document.querySelector("#edutokens");
+  const pigeontokens = document.querySelector("#pigeontokens");
   const whiteroses = document.querySelector("#whiteroses");
   const fieldturns = document.querySelector("#fields");
   const beasthunt = document.querySelector("#beasthunt");
   const banquetHostingCost = document.querySelector("#banquethostingcost");
+  const guildBuildingCost = document.querySelector("#guildbuildingCost");
 
-  tokens.innerText = dailyEduTokensCost * 7;
+  edutokens.innerText = dailyEduTokensCost * 7;
+  pigeontokens.innerText = dailyPigeonTokensCost * 7;
   whiteroses.innerText = dailyWhiteRosesCost * 7;
   fieldturns.innerText = weeklyFieldCost;
   beasthunt.innerText = dailyBeastHuntCost * 7;
   banquetHostingCost.innerText = banquetTotalCost;
+  guildBuildingCost.innerText = cycleBuildingCost;
 }
