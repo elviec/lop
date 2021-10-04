@@ -28,6 +28,9 @@ function calculate() {
   const fieldTurns = parseInt(document.querySelector("#fieldTurns").value);
   const smallBanquet = document.querySelector("#smallBanquet").value;
   const largeBanquet = document.querySelector("#largeBanquet").value;
+  const abalone = document.querySelector("input[name=abalone]:checked");
+  const scallop = document.querySelector("input[name=scallop]:checked");
+  const seaCucumber = document.querySelector("input[name=seacucumber]:checked");
 
   //daily income
   const worship = 70;
@@ -54,6 +57,10 @@ function calculate() {
 
   //weekly expenses
   const weeklyFieldCost = fieldTurns > 0 ? getWeeklyFieldCost(fieldTurns) : 0;
+  const abaloneCost = abalone ? 150 : 0;
+  const scallopCost = scallop ? 150 : 0;
+  const seaCucumberCost = seaCucumber ? 150 : 0;
+  const weeklySeafoodCost = abaloneCost + scallopCost + seaCucumberCost;
 
   //cycle income
   const marriageIncome = marriage * 20;
@@ -80,7 +87,8 @@ function calculate() {
     dailyBeastHuntCost;
   const weeklyIncome =
     dailyIncome * 7 + weeklySalary + weeklyShare + weeklyPerk;
-  const minWeeklyExpenses = 7 * minDailyExpenses + weeklyFieldCost;
+  const minWeeklyExpenses =
+    7 * minDailyExpenses + weeklyFieldCost + weeklySeafoodCost;
   const cycleIncome =
     weeklyIncome * 3 + dailyIncome * 3 + marriageIncome + chapterIncome;
   const minCycleExpenses =
@@ -106,6 +114,7 @@ function calculate() {
     dailyWhiteRosesCost,
     dailyBeastHuntCost,
     weeklyFieldCost,
+    weeklySeafoodCost,
     banquetTotalCost,
     cycleBuildingCost
   );
@@ -182,6 +191,7 @@ function displayExpenses(
   dailyWhiteRosesCost,
   dailyBeastHuntCost,
   weeklyFieldCost,
+  weeklySeafoodCost,
   banquetTotalCost,
   cycleBuildingCost
 ) {
@@ -189,6 +199,7 @@ function displayExpenses(
   const pigeontokens = document.querySelector("#pigeontokens");
   const whiteroses = document.querySelector("#whiteroses");
   const fieldturns = document.querySelector("#fields");
+  const seafoodCost = document.querySelector("#seafoodcost");
   const beasthunt = document.querySelector("#beasthunt");
   const banquetHostingCost = document.querySelector("#banquethostingcost");
   const guildBuildingCost = document.querySelector("#guildbuildingCost");
@@ -197,6 +208,7 @@ function displayExpenses(
   pigeontokens.innerText = dailyPigeonTokensCost * 7;
   whiteroses.innerText = dailyWhiteRosesCost * 7;
   fieldturns.innerText = weeklyFieldCost;
+  seafoodCost.innerText = weeklySeafoodCost;
   beasthunt.innerText = dailyBeastHuntCost * 7;
   banquetHostingCost.innerText = banquetTotalCost;
   guildBuildingCost.innerText = cycleBuildingCost;
