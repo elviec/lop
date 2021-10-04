@@ -1,49 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Intimacy Points Calculator</title>
-  <meta name="description" content="Legend of Phoenix - Intimacy Points Calculator">
-  <meta name="author" content="Elvie">
+    <title>Intimacy Points Calculator</title>
+    <meta
+      name="description"
+      content="Legend of Phoenix - Intimacy Points Calculator"
+    />
+    <meta name="author" content="Elvie" />
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
-  <div class="container">
-    <div class="center-box">
-      <h1 class="center-text">Intimacy Points Calculator</h1>
-      <div>
-        <img src="images/whiteJade.png"> <input type="text" id="white" placeholder="enter quantity"/>
-      </div>
-      <div>
-        <img src="images/agateJade.png"> <input type="text" id="agate" placeholder="enter quantity"/>
-      </div>
-      <div>
-        <img src="images/hetianJade.png"> <input type="text" id="hetian" placeholder="enter quantity"/>
-      </div>
-      <div>
-        <img src="images/blessing.png"> <input type="text" id="blessing" placeholder="enter quantity"/>
-      </div>
-      <div>
-        <img src="images/staminaPill.png"> <input type="text" id="stamina" placeholder="enter quantity"/>
-      </div>
-      <button onclick="calculate()">Calculate</button>
-      <h2 id="title" class="center-text"></h2>
-      <div id="estimated" class="overlay estimated-points center-text"></div>
-      <h2>How many points do I need?</h2>
-      <input type="text" id="from" placeholder="from level 1"/> to <input type="text" id="to" placeholder="to max level 400"/>
-      <div><button onclick="intimacy()">Show me</button>
-      <div id="total" class="total center-text"></div>
+  <body>
+    <div class="container">
+      <div class="center-box">
+        <h1 class="center-text">Intimacy Points Calculator</h1>
+        <div>
+          <img src="images/whiteJade.png" />
+          <input type="text" id="white" placeholder="enter quantity" />
+        </div>
+        <div>
+          <img src="images/agateJade.png" />
+          <input type="text" id="agate" placeholder="enter quantity" />
+        </div>
+        <div>
+          <img src="images/hetianJade.png" />
+          <input type="text" id="hetian" placeholder="enter quantity" />
+        </div>
+        <div>
+          <img src="images/blessing.png" />
+          <input type="text" id="blessing" placeholder="enter quantity" />
+        </div>
+        <div>
+          <img src="images/staminaPill.png" />
+          <input type="text" id="stamina" placeholder="enter quantity" />
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <h2 id="title" class="center-text"></h2>
+        <div id="estimated" class="overlay estimated-points center-text"></div>
+        <h2>How many points do I need?</h2>
+        <input type="text" id="from" placeholder="from level 1" /> to
+        <input type="text" id="to" placeholder="to max level 400" />
+        <div>
+          <button onclick="intimacy()">Show me</button>
+          <div id="total" class="total center-text"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="note">Blessing Intimacy Giftpack is estimated to give 90 points (realistic), 130 points (optimistic). Stamina Pill is estimated to give 50 points per pill from travelling. Use this calculator as a reference only. Developed by Elvie @AS.53 Mystique Guild. <a href="https://www.paypal.com/paypalme/sherlychan"><img src="images/coffee.png" class="coffee"></a></div>
-</body>
-<script src="calculate.js"></script>
+    <div class="note">
+      Blessing Intimacy Giftpack is estimated to give 90 points (realistic), 130
+      points (optimistic). Stamina Pill is estimated to give 50 points per pill
+      from travelling. Use this calculator as a reference only. Developed by
+      Elvie @AS.53 Mystique Guild.
+      <a href="https://www.paypal.com/paypalme/sherlychan"
+        ><img src="images/coffee.png" class="coffee"
+      /></a>
+    </div>
+  </body>
+  <script src="calculate.js"></script>
+  <!-- hitwebcounter Code START -->
+  <a href="https://www.hitwebcounter.com" target="_blank">
+    <img
+      src="https://hitwebcounter.com/counter/counter.php?page=7877228&style=0007&nbdigits=5&type=ip&initCount=100"
+      title="Free Counter"
+      alt="web counter"
+      border="0"
+  /></a>
 </html>

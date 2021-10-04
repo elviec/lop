@@ -30,7 +30,7 @@
   </head>
   <body>
     <div>
-      <h1 class="title has-text-centered">Ingots Calculator V2.0</h1>
+      <h1 class="title has-text-centered">Ingots Calculator V2.1</h1>
 
       <div class="container mt-4 mb-4">
         <fieldset class="box">
@@ -205,6 +205,22 @@
           </div>
 
           <div class="field mb-4">
+            <p>Daily purchase of extra turns in Rare Beast Hunt</p>
+            <div class="select">
+              <select id="beastHuntTurns">
+                <option value="0">None</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="box">
+          <legend class="label">Weekly</legend>
+          <div class="field mb-4">
             <p>Daily purchase of extra turns in Fields</p>
             <div class="select">
               <select id="fieldTurns">
@@ -223,18 +239,29 @@
                 <option value="9">12</option>
               </select>
             </div>
+            <p class="help">
+              This event occurs 5 days per week, it will be added up for you.
+            </p>
           </div>
           <div class="field mb-4">
-            <p>Daily purchase of extra turns in Rare Beast Hunt</p>
-            <div class="select">
-              <select id="beastHuntTurns">
-                <option value="0">None</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
+            <p>Purchase of Limited Ingredients in Farm (5 each)</p>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="abalone" value="abalone" />
+                Baby Abalone
+              </label>
+            </div>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="scallop" value="scallop" />
+                Baby Scallops
+              </label>
+            </div>
+            <div class="control mb-4">
+              <label class="checkbox">
+                <input type="checkbox" name="seacucumber" value="seacucumber" />
+                Baby Sea Cucumber
+              </label>
             </div>
           </div>
         </fieldset>
@@ -364,6 +391,7 @@
             <p>White Roses : <span id="whiteroses">0</span> per week</p>
             <p>Field Extra Turns : <span id="fields">0</span> per week</p>
             <p>Rare Beast Hunt: <span id="beasthunt">0</span> per week</p>
+            <p>Baby Seafood : <span id="seafoodcost">0</span> per week</p>
             <p>
               Banquet Hosting Cost: <span id="banquethostingcost">0</span> per
               cycle
@@ -503,5 +531,13 @@
         </div>
       </div>
     </div>
+    <!-- hitwebcounter Code START -->
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=7877226&style=0006&nbdigits=5&type=ip&initCount=100"
+        title="Free Counter"
+        alt="web counter"
+        border="0"
+    /></a>
   </body>
 </html>
