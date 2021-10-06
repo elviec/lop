@@ -38,6 +38,7 @@ function calculate() {
   const labourIncome = labour === "1" ? 30 : 15;
   const monthlyPass = monthly ? 100 : 0;
   const lifetimePass = lifetime ? 120 : 0;
+  const dailyQuests = 30;
 
   //dailyExpenses
   const dailyBuild = building ? building : 0;
@@ -63,7 +64,7 @@ function calculate() {
   const weeklySeafoodCost = abaloneCost + scallopCost + seaCucumberCost;
 
   //cycle income
-  const marriageIncome = marriage * 20;
+  const marriageIncome = marriage ? getMarriagesIncome(marriage) : 0;
   const chapterIncome = chapter * 100;
 
   //cycle expenses
@@ -76,6 +77,7 @@ function calculate() {
     kunningkong +
     worship +
     timedLogin +
+    dailyQuests +
     labourIncome +
     monthlyPass +
     lifetimePass;
@@ -90,7 +92,13 @@ function calculate() {
   const minWeeklyExpenses =
     7 * minDailyExpenses + weeklyFieldCost + weeklySeafoodCost;
   const cycleIncome =
-    weeklyIncome * 3 + dailyIncome * 3 + marriageIncome + chapterIncome;
+    weeklyIncome * 3 +
+    weeklySalary +
+    weeklyShare +
+    weeklyPerk +
+    dailyIncome * 3 +
+    marriageIncome +
+    chapterIncome;
   const minCycleExpenses =
     minWeeklyExpenses * 3 +
     minDailyExpenses * 3 +
@@ -183,6 +191,14 @@ function getDailyBeastHuntCost(beastHuntTurns) {
   );
 
   return dailyBeastHuntCost;
+}
+
+function getMarriagesIncome(marriagesCount) {
+  if (marriagesCount <= 10) {
+    return marriagesCount * 20;
+  } else {
+    return 200 + parseInt((marriagesCount - 10) / 5) * 100;
+  }
 }
 
 function displayExpenses(
