@@ -1,7 +1,10 @@
 function calculate() {
   const kunningkong =
     parseInt(document.querySelector("#kunningkong").value) | 0;
-  const marriage = document.querySelector("#marriage").value;
+  let marriage = parseInt(document.querySelector("#marriage").value);
+  if (marriage > 40) {
+    marriage = 40;
+  }
   const chapter = document.querySelector("#chapter").value;
   const monthly = document.querySelector("#monthly").checked;
   const lifetime = document.querySelector("#lifetime").checked;
