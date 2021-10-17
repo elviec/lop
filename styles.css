@@ -1,13 +1,14 @@
-html, body {
-  display:flex; 
+html,
+body {
+  display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: 'Pangolin', cursive;
+  font-family: "Pangolin", cursive;
   background-color: tomato;
 }
 
-.container {
+.center-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,28 +25,26 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media only screen 
-  and (max-device-width: 500px) 
- {
-  .center-box{
+@media only screen and (max-device-width: 500px) {
+  .center-box {
     width: 100%;
   }
 }
-*:focus {outline:none !important}
+*:focus {
+  outline: none !important;
+}
 
-input[type=text] {
+input[type="number"] {
   font-size: 1em;
   padding: 10px;
   margin: 10px;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  border-radius:10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
 }
 
-@media only screen 
-  and (max-device-width: 500px) 
- {
-  input[type=text] {
+@media only screen and (max-device-width: 500px) {
+  input[type="text"] {
     font-size: 2em;
   }
 }
@@ -60,9 +59,7 @@ img {
   vertical-align: bottom;
 }
 
-@media only screen 
-  and (max-device-width: 500px) 
- {
+@media only screen and (max-device-width: 500px) {
   img {
     width: 100px;
     height: 100px;
@@ -71,13 +68,13 @@ img {
 
 button {
   margin-top: 20px;
-  padding:10px;
-  border:none;
+  padding: 10px;
+  border: none;
   background-color: tomato;
-  color:#fff;
+  color: #fff;
   font-size: 1.2em;
-  border-radius:5px;
-  width:30%;
+  border-radius: 5px;
+  width: 30%;
   cursor: pointer;
 }
 
@@ -95,8 +92,8 @@ button {
 }
 
 .note {
-  margin-top:auto; 
-  background-color: #D3D3D3;
+  margin-top: auto;
+  background-color: #d3d3d3;
   padding: 20px;
   font-size: 1.2em;
 }
