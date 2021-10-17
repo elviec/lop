@@ -1,6 +1,7 @@
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .parent {
@@ -22,7 +23,7 @@ html, body {
   padding: 10px;
   background-color: #f3e7e3;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px 5px;
   grid-template-areas:
     "hat robe belt ."
@@ -31,111 +32,199 @@ html, body {
     "curator-hat curator-robe curator-belt curator-craft"
     "deputy-hat deputy-robe deputy-belt deputy-craft"
     "chief-hat chief-robe chief-belt chief-craft"
-    "archief-hat archief-robe archief-belt archief-craft";
+    "archief-hat archief-robe archief-belt archief-craft"
+    "grandchief-hat grandchief-robe grandchief-belt grandchief-craft";
 }
 
-@media only screen 
-  and (max-device-width: 500px) 
- {
+@media only screen and (max-device-width: 500px) {
   .grid-container {
-    max-width: 80vw;
+    width: 100%;
+    height: 80vh;
   }
 }
 
-.hat { grid-area: hat; }
+.hat {
+  grid-area: hat;
+}
 
-.robe { grid-area: robe; }
+.robe {
+  grid-area: robe;
+}
 
-.belt { grid-area: belt; }
+.belt {
+  grid-area: belt;
+}
 
-.servant { grid-area: servant; }
+.servant {
+  grid-area: servant;
+}
 
-.servant-hat { grid-area: servant-hat; }
+.servant-hat {
+  grid-area: servant-hat;
+}
 
-.servant-robe { grid-area: servant-robe; }
+.servant-robe {
+  grid-area: servant-robe;
+}
 
-.servant-belt { grid-area: servant-belt; }
+.servant-belt {
+  grid-area: servant-belt;
+}
 
-.servant-craft { grid-area: servant-craft; }
+.servant-craft {
+  grid-area: servant-craft;
+}
 
-.steward { grid-area: steward; }
+.steward {
+  grid-area: steward;
+}
 
-.steward-hat { grid-area: steward-hat; }
+.steward-hat {
+  grid-area: steward-hat;
+}
 
-.steward-robe { grid-area: steward-robe; }
+.steward-robe {
+  grid-area: steward-robe;
+}
 
-.steward-belt { grid-area: steward-belt; }
+.steward-belt {
+  grid-area: steward-belt;
+}
 
-.steward-craft { grid-area: steward-craft; }
+.steward-craft {
+  grid-area: steward-craft;
+}
 
-.curator { grid-area: curator; }
+.curator {
+  grid-area: curator;
+}
 
-.curator-hat { grid-area: curator-hat; }
+.curator-hat {
+  grid-area: curator-hat;
+}
 
-.curator-robe { grid-area: curator-robe; }
+.curator-robe {
+  grid-area: curator-robe;
+}
 
-.curator-belt { grid-area: curator-belt; }
+.curator-belt {
+  grid-area: curator-belt;
+}
 
-.curator-craft { grid-area: curator-craft; }
+.curator-craft {
+  grid-area: curator-craft;
+}
 
-.deputy { grid-area: deputy; }
+.deputy {
+  grid-area: deputy;
+}
 
-.deputy-hat { grid-area: deputy-hat; }
+.deputy-hat {
+  grid-area: deputy-hat;
+}
 
-.deputy-robe { grid-area: deputy-robe; }
+.deputy-robe {
+  grid-area: deputy-robe;
+}
 
-.deputy-belt { grid-area: deputy-belt; }
+.deputy-belt {
+  grid-area: deputy-belt;
+}
 
-.deputy-craft { grid-area: deputy-craft; }
+.deputy-craft {
+  grid-area: deputy-craft;
+}
 
-.chief { grid-area: chief; }
+.chief {
+  grid-area: chief;
+}
 
-.chief-hat { grid-area: chief-hat; }
+.chief-hat {
+  grid-area: chief-hat;
+}
 
-.chief-robe { grid-area: chief-robe; }
+.chief-robe {
+  grid-area: chief-robe;
+}
 
-.chief-belt { grid-area: chief-belt; }
+.chief-belt {
+  grid-area: chief-belt;
+}
 
-.chief-craft { grid-area: chief-craft; }
+.chief-craft {
+  grid-area: chief-craft;
+}
 
-.archief { grid-area: archief; }
+.archief {
+  grid-area: archief;
+}
 
-.archief-hat { grid-area: archief-hat; }
+.archief-hat {
+  grid-area: archief-hat;
+}
 
-.archief-robe { grid-area: archief-robe; }
+.archief-robe {
+  grid-area: archief-robe;
+}
 
-.archief-belt { grid-area: archief-belt; }
+.archief-belt {
+  grid-area: archief-belt;
+}
 
-.archief-craft { grid-area: archief-craft; }
+.archief-craft {
+  grid-area: archief-craft;
+}
 
-img {
+.grandchief {
+  grid-area: grandchief;
+}
+
+.grandchief-hat {
+  grid-area: grandchief-hat;
+}
+
+.grandchief-robe {
+  grid-area: grandchief-robe;
+}
+
+.grandchief-belt {
+  grid-area: grandchief-belt;
+}
+
+.grandchief-craft {
+  grid-area: grandchief-craft;
+}
+
+.icon {
   width: 80px;
   height: 80px;
   vertical-align: bottom;
 }
 
-input[type=text] {
-  font-size: 2em;
+input[type="number"] {
+  font-size: 1.5em;
   text-align: center;
   width: 60px;
   padding: 10px;
   margin: 5px;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  border-radius:5px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
 }
 
-*:focus {outline:none !important}
+*:focus {
+  outline: none !important;
+}
 
 button {
   width: 80px;
   margin: 5px;
-  padding:10px;
-  border:none;
+  padding: 10px;
+  border: none;
   background-color: tomato;
-  color:#fff;
+  color: #fff;
   font-size: 1.5em;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .clear-all {

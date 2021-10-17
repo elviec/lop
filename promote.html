@@ -18,36 +18,41 @@
       <div class="hat">Hat</div>
       <div class="robe">Robe</div>
       <div class="belt">Belt</div>
-      <div class="servant-hat"><img src="images/servant-hat.png"><input type="text" id="servantHat"></input></div>
-      <div class="servant-robe"><img src="images/servant-robe.png"><input type="text" id="servantRobe"></input></div>
-      <div class="servant-belt"><img src="images/servant-belt.png"><input type="text" id="servantBelt"></input></div>
+      <div class="servant-hat"><img src="images/servant-hat.png" class="icon"><input type="number" id="servantHat"></input></div>
+      <div class="servant-robe"><img src="images/servant-robe.png" class="icon"><input type="number" id="servantRobe"></input></div>
+      <div class="servant-belt"><img src="images/servant-belt.png" class="icon"><input type="number" id="servantBelt"></input></div>
       <div class="servant-craft"><button id="servantCraft" onclick=craftSteward()>Craft</button><button id="resetServant" onclick=resetServant()>Clear</button></div>
       <div class="craft3"></div>
       <div class="craft4"></div>
-      <div class="steward-hat"><img src="images/steward-hat.png"><input type="text" id="stewardHat"></input></div>
-      <div class="steward-robe"><img src="images/steward-robe.png"><input type="text" id="stewardRobe"></input></div>
-      <div class="steward-belt"><img src="images/steward-belt.png"><input type="text" id="stewardBelt"></input></div>
+      <div class="steward-hat"><img src="images/steward-hat.png" class="icon"><input type="number" id="stewardHat"></input></div>
+      <div class="steward-robe"><img src="images/steward-robe.png" class="icon"><input type="number" id="stewardRobe"></input></div>
+      <div class="steward-belt"><img src="images/steward-belt.png" class="icon"><input type="number" id="stewardBelt"></input></div>
       <div class="steward-craft"><button id="stewardCraft" onclick=craftCurator()>Craft</button><button id="resetSteward" onclick=resetSteward()>Clear</button></div>
-      <div class="curator-hat"><img src="images/curator-hat.png"><input type="text" id="curatorHat"></input></div>
-      <div class="curator-robe"><img src="images/curator-robe.png"><input type="text" id="curatorRobe"></input></div>
-      <div class="curator-belt"><img src="images/curator-belt.png"><input type="text" id="curatorBelt"></input></div>
+      <div class="curator-hat"><img src="images/curator-hat.png" class="icon"><input type="number" id="curatorHat"></input></div>
+      <div class="curator-robe"><img src="images/curator-robe.png" class="icon"><input type="number" id="curatorRobe"></input></div>
+      <div class="curator-belt"><img src="images/curator-belt.png" class="icon"><input type="number" id="curatorBelt"></input></div>
       <div class="curator-craft"><button id="curatorCraft" onclick=craftDeputy()>Craft</button><button id="resetCurator" onclick=resetCurator()>Clear</button></div>
-      <div class="deputy-hat"><img src="images/deputy-hat.png"><input type="text" id="deputyHat"></input></div>
-      <div class="deputy-robe"><img src="images/deputy-robe.png"><input type="text" id="deputyRobe"></input></div>
-      <div class="deputy-belt"><img src="images/deputy-belt.png"><input type="text" id="deputyBelt"></input></div>
+      <div class="deputy-hat"><img src="images/deputy-hat.png" class="icon"><input type="number" id="deputyHat"></input></div>
+      <div class="deputy-robe"><img src="images/deputy-robe.png" class="icon"><input type="number" id="deputyRobe"></input></div>
+      <div class="deputy-belt"><img src="images/deputy-belt.png" class="icon"><input type="number" id="deputyBelt"></input></div>
       <div class="deputy-craft"><button id="deputyCraft" onclick=craftChief()>Craft</button><button id="resetDeputy" onclick=resetDeputy()>Clear</button></div>
-      <div class="chief-hat"><img src="images/chief-hat.png"><input type="text" id="chiefHat"></input></div>
-      <div class="chief-robe"><img src="images/chief-robe.png"><input type="text" id="chiefRobe"></input></div>
-      <div class="chief-belt"><img src="images/chief-belt.png"><input type="text" id="chiefBelt"></input></div>
+      <div class="chief-hat"><img src="images/chief-hat.png" class="icon"><input type="number" id="chiefHat"></input></div>
+      <div class="chief-robe"><img src="images/chief-robe.png" class="icon"><input type="number" id="chiefRobe"></input></div>
+      <div class="chief-belt"><img src="images/chief-belt.png" class="icon"><input type="number" id="chiefBelt"></input></div>
       <div class="chief-craft"><button id="chiefCraft" onclick=craftArchChief()>Craft</button><button id="resetChief" onclick=resetChief()>Clear</button></div>
-      <div class="archief-hat"><img src="images/archief-hat.png"><input type="text" id="archiefHat"></div>
-      <div class="archief-robe"><img src="images/archief-robe.png"><input type="text" id="archiefRobe"></div>
-      <div class="archief-belt"><img src="images/archief-belt.png"><input type="text" id="archiefBelt"></div>
-      <div class="archief-craft"><button onclick=resetArchief()>Clear</button></div>
+      <div class="archief-hat"><img src="images/archief-hat.png" class="icon"><input type="number" id="archiefHat"></div>
+      <div class="archief-robe"><img src="images/archief-robe.png" class="icon"><input type="number" id="archiefRobe"></div>
+      <div class="archief-belt"><img src="images/archief-belt.png" class="icon"><input type="number" id="archiefBelt"></div>
+      <div class="archief-craft"><button id="archiefCraft" onclick=craftGrandChief()>Craft</button><button onclick=resetArchief()>Clear</button></div>
+      <div class="grandchief-hat"><img src="images/grand-chief-hat.png" class="icon"><input type="number" id="grandchiefHat"></div>
+      <div class="grandchief-robe"><img src="images/grand-chief-robe.png" class="icon"><input type="number" id="grandchiefRobe"></div>
+      <div class="grandchief-belt"><img src="images/grand-chief-belt.png" class="icon"><input type="number" id="grandchiefBelt"></div>
+      <div class="grandchief-craft"><button onclick=resetGrandchief()>Clear</button></div>
+     
       <button class="clear-all" onclick=resetAll()>Clear All</button>
     </div>
   </div>
-  <div class="footer">Designed & developed by Elvie @Asia s.53 Mystique Guild. <a href="https://www.paypal.com/paypalme/sherlychan"><img src="images/coffee.png" class="coffee"></a></div>
+  <div class="footer">Designed & developed by Elvie @Asia s.53 Mystique Guild.</div>
 </body>
 <script src="promote.js"></script>
 <!-- hitwebcounter Code START -->
