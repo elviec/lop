@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Pangolin", cursive;
   background-color: tomato;
+  font-size: 1.5em;
 }
 
 .center-container {
@@ -53,14 +54,14 @@ input[type="number"] {
   text-align: center;
 }
 
-img {
+.icon {
   width: 50px;
   height: 50px;
   vertical-align: bottom;
 }
 
 @media only screen and (max-device-width: 500px) {
-  img {
+  .icon {
     width: 100px;
     height: 100px;
   }

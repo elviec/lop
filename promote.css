@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2em;
 }
 
 .parent {
@@ -217,7 +218,7 @@ input[type="number"] {
 }
 
 button {
-  width: 80px;
+  width: 100px;
   margin: 5px;
   padding: 10px;
   border: none;

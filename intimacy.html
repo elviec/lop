@@ -10,7 +10,6 @@
       content="Legend of Phoenix - Intimacy Points Calculator"
     />
     <meta name="author" content="Elvie" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
@@ -27,11 +26,10 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://elviec.github.io/lop">
           Elvie's LOP
@@ -61,23 +59,23 @@
       <div class="center-box">
         <h1 class="title center-text">Intimacy Points Calculator</h1>
         <div>
-          <img src="images/whiteJade.png" />
+          <img src="images/whiteJade.png" class="icon"/>
           <input type="number" id="white" placeholder="enter quantity" />
         </div>
         <div>
-          <img src="images/agateJade.png" />
+          <img src="images/agateJade.png" class="icon" />
           <input type="number" id="agate" placeholder="enter quantity" />
         </div>
         <div>
-          <img src="images/hetianJade.png" />
+          <img src="images/hetianJade.png" class="icon"/>
           <input type="number" id="hetian" placeholder="enter quantity" />
         </div>
         <div>
-          <img src="images/blessing.png" />
+          <img src="images/blessing.png" class="icon"/>
           <input type="number" id="blessing" placeholder="enter quantity" />
         </div>
         <div>
-          <img src="images/staminaPill.png" />
+          <img src="images/staminaPill.png" class="icon"/>
           <input type="number" id="stamina" placeholder="enter quantity" />
         </div>
         <button onclick="calculate()">Calculate</button>
