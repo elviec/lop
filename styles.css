@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Pangolin", cursive;
   background-color: tomato;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .center-container {
@@ -26,19 +26,17 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media only screen and (max-device-width: 500px) {
-  .center-box {
-    width: 100%;
-  }
-}
-*:focus {
-  outline: none !important;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type="number"] {
   font-size: 1em;
-  width: 320px;
-  padding: 8px;
+  padding: 10px;
+  margin-left: 0.5em;
+  height: 2em;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
@@ -46,9 +44,16 @@ input[type="number"] {
 }
 
 @media only screen and (max-device-width: 500px) {
-  input[type="number"] {
-    font-size: 1.2em;
+  .center-box {
+    width: 100%;
   }
+  input[type="number"] {
+    font-size: 2em;
+    width: 250px;
+  }
+}
+*:focus {
+  outline: none !important;
 }
 
 .center-text {
@@ -64,8 +69,8 @@ input[type="number"] {
 
 @media only screen and (max-device-width: 500px) {
   .icon {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 }
 
