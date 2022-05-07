@@ -53,9 +53,6 @@
   <h3 class="has-text-centered">v1.2 update : Added Auto Craft (1 button crafting) feature- May 07, 2022</h3>
   <div class="parent">
     <div class="grid-container">
-      <div class="hat">Hat</div>
-      <div class="robe">Robe</div>
-      <div class="belt">Belt</div>
       <div class="servant-hat"><img src="images/servant-hat.png" class="icon"><input type="number" id="servantHat"></input></div>
       <div class="servant-robe"><img src="images/servant-robe.png" class="icon"><input type="number" id="servantRobe"></input></div>
       <div class="servant-belt"><img src="images/servant-belt.png" class="icon"><input type="number" id="servantBelt"></input></div>
@@ -86,8 +83,12 @@
       <div class="grandchief-robe"><img src="images/grand-chief-robe.png" class="icon"><input type="number" id="grandchiefRobe"></div>
       <div class="grandchief-belt"><img src="images/grand-chief-belt.png" class="icon"><input type="number" id="grandchiefBelt"></div>
       <div class="grandchief-craft"></div>
-      <button class="clear-all" onclick=autoCraft()>Auto Craft</button>
-      <button class="clear-all" onclick=resetAll()>Clear All</button>
+      <div class="auto-craft">
+        <button class="action-button" onclick=autoCraft()>Auto Craft</button>
+      </div>
+      <div class="clear-all">
+        <button class="action-button" onclick=resetAll()>Clear All</button>
+      </div>
     </div>
   </div>
   <div class="footer">Designed & developed by Elvie @Asia s.53 Mystique Guild.</div>

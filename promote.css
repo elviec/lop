@@ -21,43 +21,28 @@ body {
   align-items: baseline;
   align-content: center;
   border: 2px solid #f76707;
-  padding: 10px;
+  padding: 15px;
   background-color: #f3e7e3;
+  gap: 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px 5px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "hat robe belt ."
     "servant-hat servant-robe servant-belt servant-craft"
     "steward-hat steward-robe steward-belt steward-craft"
     "curator-hat curator-robe curator-belt curator-craft"
     "deputy-hat deputy-robe deputy-belt deputy-craft"
     "chief-hat chief-robe chief-belt chief-craft"
     "archief-hat archief-robe archief-belt archief-craft"
-    "grandchief-hat grandchief-robe grandchief-belt grandchief-craft";
+    "grandchief-hat grandchief-robe grandchief-belt grandchief-craft"
+    ". auto-craft clear-all .";
 }
 
 @media only screen and (max-device-width: 500px) {
   body {
     font-size: 1.5em;
   }
-  .grid-container {
-    height: 80vh;
-  }
 }
-
-.hat {
-  grid-area: hat;
-}
-
-.robe {
-  grid-area: robe;
-}
-
-.belt {
-  grid-area: belt;
-}
-
+å
 .servant {
   grid-area: servant;
 }
@@ -198,6 +183,14 @@ body {
   grid-area: grandchief-craft;
 }
 
+.auto-craft {
+  grid-area: auto-craft;
+}
+
+.clear-all {
+  grid-area: clear-all;
+}
+
 .icon {
   width: 80px;
   height: 80px;
@@ -205,7 +198,7 @@ body {
 }
 
 input[type="number"] {
-  font-size: 1.2em;
+  font-size: 1.0em;
   text-align: center;
   width: 100px;
   padding: 10px;
@@ -230,7 +223,7 @@ button {
   border-radius: 5px;
 }
 
-.clear-all {
+.action-button {
   width: 150px;
   text-align: center;
 }
