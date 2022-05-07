@@ -194,3 +194,12 @@ function resetAll() {
   resetArchief();
   resetGrandchief();
 }
+
+function autoCraft() {
+  craftSteward();
+  craftCurator();
+  craftDeputy();
+  craftChief();
+  craftArchChief();
+  craftGrandChief();
+}
