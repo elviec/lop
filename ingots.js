@@ -34,6 +34,7 @@ function calculate() {
   const abalone = document.querySelector("input[name=abalone]:checked");
   const scallop = document.querySelector("input[name=scallop]:checked");
   const seaCucumber = document.querySelector("input[name=seacucumber]:checked");
+  const babyCarp = document.querySelector("input[name=babycarp]:checked");
 
   //daily income
   const worship = 70;
@@ -64,7 +65,9 @@ function calculate() {
   const abaloneCost = abalone ? 150 : 0;
   const scallopCost = scallop ? 150 : 0;
   const seaCucumberCost = seaCucumber ? 150 : 0;
-  const weeklySeafoodCost = abaloneCost + scallopCost + seaCucumberCost;
+  const babyCarpCost = babyCarp ? 250 : 0;
+  const weeklySeafoodCost =
+    abaloneCost + scallopCost + seaCucumberCost + babyCarpCost;
 
   //cycle income
   const marriageIncome = marriage ? getMarriagesIncome(marriage) : 0;
