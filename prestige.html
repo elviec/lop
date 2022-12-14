@@ -1,0 +1,523 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>Prestige Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prestige Points Planner" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="prestige.css" />
+  </head>
+  <body>
+    <h1 class="title has-text-centered">Scholar Prestige Planner</h1>
+
+    <div class="container mt-4 mb-4 is-max-desktop">
+      <p class="has-text-centered">
+        Before you begin, setup your Prestige levels
+      </p>
+      <div class="box has-text-centered">
+        <button class="button">Setup</button>
+      </div>
+      <fieldset class="box">
+        <legend class="label">Basic Prestige Setup</legend>
+        <div class="field">
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/wisdom.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Wisdom Specialization LV.<input
+                  type="number"
+                  id="wis-s"
+                  placeholder="0"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/politics.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Politics Specialization LV.<input
+                  type="number"
+                  id="pol-s"
+                  placeholder="0"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/charisma.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Charisma Specialization LV.<input
+                  type="number"
+                  id="cha-s"
+                  placeholder="0"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/authority.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Authority Specialization LV.<input
+                  type="number"
+                  id="auth-s"
+                  placeholder="0"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field"></div>
+      </fieldset>
+      <fieldset class="box">
+        <legend class="label">Advanced Prestige Setup</legend>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-adv.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Inventive & Resourceful LV.<input
+                type="number"
+                id="wis-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/pol-adv.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Stable & Harmonious LV.<input
+                type="number"
+                id="pol-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/cha-only.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Courtly & Elegant LV.<input
+                type="number"
+                id="cha-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/auth-only.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Extraordinary Power LV.<input
+                type="number"
+                id="auth-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-cha.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Talented & Handsome LV.<input
+                type="number"
+                id="wis-cha-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Great Ambition LV.<input
+                type="number"
+                id="wis-auth-adv-s"
+                placeholder="0"
+                min="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/pol-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Prosperous Country LV.<input
+                type="number"
+                id="pol-auth-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/cha-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Outstanding LV.<input
+                type="number"
+                id="cha-auth-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-pol.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Foresightful LV.<input
+                type="number"
+                id="wis-pol-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/top-genius.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Top Genius LV.<input
+                type="number"
+                id="top-genius-adv-s"
+                placeholder="0"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <button class="button" onclick="setup()">Save</button>
+        </div>
+      </fieldset>
+      <div class="has-text-centered mb-4">
+        Prestige Points : <input type="number" id="balance" value="5000" />
+      </div>
+
+      <fieldset class="box">
+        <legend class="label">Basic Prestige</legend>
+        <div class="field">
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/wisdom.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Wisdom Specialization LV.<input
+                  type="number"
+                  id="wisBasic"
+                  disabled
+                />
+              </p>
+              <p>Effect: Wisdom attribute +<span id="wisEffect">0</span>%</p>
+            </div>
+            <div class="column">
+              <input type="number" disabled placeholder="113" id="wisPoints" />
+              <button onclick="upgradeWisdom()">Upgrade</button>
+            </div>
+          </div>
+          <hr />
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/politics.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Politics Specialization LV.<input
+                  type="number"
+                  id="polBasic"
+                  disabled
+                />
+              </p>
+              <p>Effect: Politics attribute +20%</p>
+              <p>Next: Politics attribute +20.5%</p>
+            </div>
+            <div class="column">
+              <input type="number" disabled placeholder="113" />
+              <button>Upgrade</button>
+            </div>
+          </div>
+          <hr />
+
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/charisma.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Charisma Specialization LV.<input
+                  type="number"
+                  disabled
+                  id="chaBasic"
+                />
+              </p>
+              <p>Effect: Charisma attribute +20%</p>
+              <p>Next: Charisma attribute +20.5%</p>
+            </div>
+            <div class="column">
+              <input type="number" disabled placeholder="113" />
+              <button>Upgrade</button>
+            </div>
+          </div>
+          <hr />
+          <div class="columns">
+            <div class="column is-1">
+              <img class="icon" src="/images/prestige/authority.png" />
+            </div>
+            <div class="column">
+              <p class="has-text-weight-bold">
+                Authority Specialization LV.<input
+                  type="number"
+                  id="authBasic"
+                  disabled
+                />
+              </p>
+              <p>Effect: Authority attribute +20%</p>
+              <p>Next: Authority attribute +20.5%</p>
+            </div>
+            <div class="column">
+              <input type="number" disabled placeholder="113" />
+              <button>Upgrade</button>
+            </div>
+          </div>
+        </div>
+        <div class="field"></div>
+      </fieldset>
+      <fieldset class="box">
+        <legend class="label">Advanced Prestige</legend>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-adv.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Inventive & Resourceful LV.<input type="number" placeholder="0" />
+            </p>
+            <p>
+              Effect: Wisdom Potential +0 for each Wisdom specialized partners
+            </p>
+            <p>
+              Next: Wisdom Potential + 4 for each Wisdom specialized partners
+            </p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <hr />
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/pol-adv.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Stable & Harmonious LV.<input type="number" placeholder="0" />
+            </p>
+            <p>
+              Effect: Pol. Potential +0 for each Politics specialized partners
+            </p>
+            <p>
+              Next: Pol. Potential + 4 for each Politics specialized partners
+            </p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/cha-only.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Courtly & Elegant LV.<input type="number" placeholder="2" />
+            </p>
+            <p>Effect: Cha. Potential +0 of an Authority-specialized partner</p>
+            <p>Next: Cha. Potential + 4 of an Authority-specialized partner</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/auth-only.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Extraordinary Power LV.<input type="number" placeholder="2" />
+            </p>
+            <p>Effect: Aut. Potential +8 each for (Aut) partners</p>
+            <p>Next: Aut. Potential + 12 each for (Aut) partners</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-cha.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Talented & Handsome LV.<input type="number" placeholder="0" />
+            </p>
+            <p>Effect: Wis & Cha. Potential +0 each for (Wis,Cha) partners</p>
+            <p>Next: Wis & Cha Potential + 2 each for (Wis,Cha) partners</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Great Ambition LV.<input type="number" placeholder="0" />
+            </p>
+            <p>Effect: Wis. & Aut. Potential +0 each for (Wis,Auth) partners</p>
+            <p>Next: Wis. & Aut. Potential +0 each for (Wis,Auth) partners</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/pol-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Prosperous Country LV.<input type="number" placeholder="0" />
+            </p>
+            <p>Effect: Pol. & Aut. Potential +0 each for (Pol,Auth) partners</p>
+            <p>Next: Pol. & Aut. Potential +2 each for (Pol,Auth) partners</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/cha-auth.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Outstanding LV.<input type="number" placeholder="6" />
+            </p>
+            <p>
+              Effect: Cha. & Aut. Potential +12 each for (Cha,Auth) partners
+            </p>
+            <p>Next: Cha. & Aut. Potential +14 each for (Cha,Auth) partners</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/wis-pol.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Foresightful LV.<input type="number" placeholder="0" />
+            </p>
+            <p>
+              Effect: Wis & Pol or (Pol & Cha) Potential +0 each for (Wis,Pol
+              and Pol,Cha) partners
+            </p>
+            <p>
+              Effect: Wis & Pol or (Pol & Cha) Potential +2 each for (Wis,Pol
+              and Pol,Cha) partners
+            </p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-1">
+            <img class="icon" src="/images/prestige/top-genius.png" />
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold">
+              Top Genius LV.<input type="number" placeholder="24" />
+            </p>
+            <p>Effect: Balance and Warrior partner's 4 Potential +24</p>
+            <p>Effect: Balance and Warrior partner's 4 Potential +25</p>
+          </div>
+          <div class="column">
+            <input type="number" disabled placeholder="5000" />
+            <button>Upgrade</button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+  <script src="prestige.js"></script>
+</html>

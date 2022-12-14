@@ -1,0 +1,1363 @@
+{
+  "BasicPrestige": [
+    {
+      "Level": "0",
+      "Bonus": "0.0%",
+      "Points": "51"
+    },
+    {
+      "Level": "1",
+      "Bonus": "0.5%",
+      "Points": "52"
+    },
+    {
+      "Level": "2",
+      "Bonus": "1.0%",
+      "Points": "53"
+    },
+    {
+      "Level": "3",
+      "Bonus": "1.5%",
+      "Points": "54"
+    },
+    {
+      "Level": "4",
+      "Bonus": "2.0%",
+      "Points": "55"
+    },
+    {
+      "Level": "5",
+      "Bonus": "2.5%",
+      "Points": "56"
+    },
+    {
+      "Level": "6",
+      "Bonus": "3.0%",
+      "Points": "57"
+    },
+    {
+      "Level": "7",
+      "Bonus": "3.5%",
+      "Points": "58"
+    },
+    {
+      "Level": "8",
+      "Bonus": "4.0%",
+      "Points": "59"
+    },
+    {
+      "Level": "9",
+      "Bonus": "4.5%",
+      "Points": "60"
+    },
+    {
+      "Level": "10",
+      "Bonus": "5.0%",
+      "Points": "61"
+    },
+    {
+      "Level": "11",
+      "Bonus": "5.5%",
+      "Points": "62",
+      "Difference": "1",
+      "Running Total": "678"
+    },
+    {
+      "Level": "12",
+      "Bonus": "6.0%",
+      "Points": "63",
+      "Difference": "1",
+      "Running Total": "741"
+    },
+    {
+      "Level": "13",
+      "Bonus": "6.5%",
+      "Points": "64",
+      "Difference": "1",
+      "Running Total": "805"
+    },
+    {
+      "Level": "14",
+      "Bonus": "7.0%",
+      "Points": "65",
+      "Difference": "1",
+      "Running Total": "870"
+    },
+    {
+      "Level": "15",
+      "Bonus": "7.5%",
+      "Points": "66",
+      "Difference": "1",
+      "Running Total": "936"
+    },
+    {
+      "Level": "16",
+      "Bonus": "8.0%",
+      "Points": "67",
+      "Difference": "1",
+      "Running Total": "1003"
+    },
+    {
+      "Level": "17",
+      "Bonus": "8.5%",
+      "Points": "68",
+      "Difference": "1",
+      "Running Total": "1071"
+    },
+    {
+      "Level": "18",
+      "Bonus": "9.0%",
+      "Points": "69",
+      "Difference": "1",
+      "Running Total": "1140"
+    },
+    {
+      "Level": "19",
+      "Bonus": "9.5%",
+      "Points": "70",
+      "Difference": "1",
+      "Running Total": "1210"
+    },
+    {
+      "Level": "20",
+      "Bonus": "10.0%",
+      "Points": "72",
+      "Difference": "2",
+      "Running Total": "1282"
+    },
+    {
+      "Level": "21",
+      "Bonus": "10.5%",
+      "Points": "74",
+      "Difference": "2",
+      "Running Total": "1356"
+    },
+    {
+      "Level": "22",
+      "Bonus": "11.0%",
+      "Points": "76",
+      "Difference": "2",
+      "Running Total": "1432"
+    },
+    {
+      "Level": "23",
+      "Bonus": "11.5%",
+      "Points": "78",
+      "Difference": "2",
+      "Running Total": "1510"
+    },
+    {
+      "Level": "24",
+      "Bonus": "12.0%",
+      "Points": "80",
+      "Difference": "2",
+      "Running Total": "1590"
+    },
+    {
+      "Level": "25",
+      "Bonus": "12.5%",
+      "Points": "82",
+      "Difference": "2",
+      "Running Total": "1672"
+    },
+    {
+      "Level": "26",
+      "Bonus": "13.0%",
+      "Points": "84",
+      "Difference": "2",
+      "Running Total": "1756"
+    },
+    {
+      "Level": "27",
+      "Bonus": "13.5%",
+      "Points": "86",
+      "Difference": "2",
+      "Running Total": "1842"
+    },
+    {
+      "Level": "28",
+      "Bonus": "14.0%",
+      "Points": "88",
+      "Difference": "2",
+      "Running Total": "1930"
+    },
+    {
+      "Level": "29",
+      "Bonus": "14.5%",
+      "Points": "90",
+      "Difference": "2",
+      "Running Total": "2020"
+    },
+    {
+      "Level": "30",
+      "Bonus": "15.0%",
+      "Points": "92",
+      "Difference": "2",
+      "Running Total": "2112"
+    },
+    {
+      "Level": "31",
+      "Bonus": "15.5%",
+      "Points": "94",
+      "Difference": "2",
+      "Running Total": "2206"
+    },
+    {
+      "Level": "32",
+      "Bonus": "16.0%",
+      "Points": "96",
+      "Difference": "2",
+      "Running Total": "2302"
+    },
+    {
+      "Level": "33",
+      "Bonus": "16.5%",
+      "Points": "98",
+      "Difference": "2",
+      "Running Total": "2400"
+    },
+    {
+      "Level": "34",
+      "Bonus": "17.0%",
+      "Points": "100",
+      "Difference": "2",
+      "Running Total": "2500"
+    },
+    {
+      "Level": "35",
+      "Bonus": "17.5%",
+      "Points": "102",
+      "Difference": "2",
+      "Running Total": "2602"
+    },
+    {
+      "Level": "36",
+      "Bonus": "18.0%",
+      "Points": "104",
+      "Difference": "2",
+      "Running Total": "2706"
+    },
+    {
+      "Level": "37",
+      "Bonus": "18.5%",
+      "Points": "106",
+      "Difference": "2",
+      "Running Total": "2812"
+    },
+    {
+      "Level": "38",
+      "Bonus": "19.0%",
+      "Points": "108",
+      "Difference": "2",
+      "Running Total": "2920"
+    },
+    {
+      "Level": "39",
+      "Bonus": "19.5%",
+      "Points": "110",
+      "Difference": "2",
+      "Running Total": "3030"
+    },
+    {
+      "Level": "40",
+      "Bonus": "20.0%",
+      "Points": "113",
+      "Difference": "3",
+      "Running Total": "3143"
+    },
+    {
+      "Level": "41",
+      "Bonus": "20.5%",
+      "Points": "116",
+      "Difference": "3",
+      "Running Total": "3259"
+    },
+    {
+      "Level": "42",
+      "Bonus": "21.0%",
+      "Points": "119",
+      "Difference": "3",
+      "Running Total": "3378"
+    },
+    {
+      "Level": "43",
+      "Bonus": "21.5%",
+      "Points": "122",
+      "Difference": "3",
+      "Running Total": "3500"
+    },
+    {
+      "Level": "44",
+      "Bonus": "22.0%",
+      "Points": "125",
+      "Difference": "3",
+      "Running Total": "3625"
+    },
+    {
+      "Level": "45",
+      "Bonus": "22.5%",
+      "Points": "128",
+      "Difference": "3",
+      "Running Total": "3753"
+    },
+    {
+      "Level": "46",
+      "Bonus": "23.0%",
+      "Points": "131",
+      "Difference": "3",
+      "Running Total": "3884"
+    },
+    {
+      "Level": "47",
+      "Bonus": "23.5%",
+      "Points": "134",
+      "Difference": "3",
+      "Running Total": "4018"
+    },
+    {
+      "Level": "48",
+      "Bonus": "24.0%",
+      "Points": "137",
+      "Difference": "3",
+      "Running Total": "4155"
+    },
+    {
+      "Level": "49",
+      "Bonus": "24.5%",
+      "Points": "140",
+      "Difference": "3",
+      "Running Total": "4295"
+    },
+    {
+      "Level": "50",
+      "Bonus": "25.0%",
+      "Points": "143",
+      "Difference": "3",
+      "Running Total": "4438"
+    },
+    {
+      "Level": "51",
+      "Bonus": "25.5%",
+      "Points": "146",
+      "Difference": "3",
+      "Running Total": "4584"
+    },
+    {
+      "Level": "52",
+      "Bonus": "26.0%",
+      "Points": "149",
+      "Difference": "3",
+      "Running Total": "4733"
+    },
+    {
+      "Level": "53",
+      "Bonus": "26.5%",
+      "Points": "152",
+      "Difference": "3",
+      "Running Total": "4885"
+    },
+    {
+      "Level": "54",
+      "Bonus": "27.0%",
+      "Points": "155",
+      "Difference": "3",
+      "Running Total": "5040"
+    },
+    {
+      "Level": "55",
+      "Bonus": "27.5%",
+      "Points": "158",
+      "Difference": "3",
+      "Running Total": "5198"
+    },
+    {
+      "Level": "56",
+      "Bonus": "28.0%",
+      "Points": "161",
+      "Difference": "3",
+      "Running Total": "5359"
+    },
+    {
+      "Level": "57",
+      "Bonus": "28.5%",
+      "Points": "164",
+      "Difference": "3",
+      "Running Total": "5523"
+    },
+    {
+      "Level": "58",
+      "Bonus": "29.0%",
+      "Points": "167",
+      "Difference": "3",
+      "Running Total": "5690"
+    },
+    {
+      "Level": "59",
+      "Bonus": "29.5%",
+      "Points": "170",
+      "Difference": "3",
+      "Running Total": "5860"
+    },
+    {
+      "Level": "60",
+      "Bonus": "30.0%",
+      "Points": "174",
+      "Difference": "4",
+      "Running Total": "6034"
+    },
+    {
+      "Level": "61",
+      "Bonus": "30.5%",
+      "Points": "178",
+      "Difference": "4",
+      "Running Total": "6212"
+    },
+    {
+      "Level": "62",
+      "Bonus": "31.0%",
+      "Points": "182",
+      "Difference": "4",
+      "Running Total": "6394"
+    },
+    {
+      "Level": "63",
+      "Bonus": "31.5%",
+      "Points": "186",
+      "Difference": "4",
+      "Running Total": "6580"
+    },
+    {
+      "Level": "64",
+      "Bonus": "32.0%",
+      "Points": "190",
+      "Difference": "4",
+      "Running Total": "6770"
+    },
+    {
+      "Level": "65",
+      "Bonus": "32.5%",
+      "Points": "194",
+      "Difference": "4",
+      "Running Total": "6964"
+    },
+    {
+      "Level": "66",
+      "Bonus": "33.0%",
+      "Points": "198",
+      "Difference": "4",
+      "Running Total": "7162"
+    },
+    {
+      "Level": "67",
+      "Bonus": "33.5%",
+      "Points": "202",
+      "Difference": "4",
+      "Running Total": "7364"
+    },
+    {
+      "Level": "68",
+      "Bonus": "34.0%",
+      "Points": "206",
+      "Difference": "4",
+      "Running Total": "7570"
+    },
+    {
+      "Level": "69",
+      "Bonus": "34.5%",
+      "Points": "210",
+      "Difference": "4",
+      "Running Total": "7780"
+    },
+    {
+      "Level": "70",
+      "Bonus": "35.0%",
+      "Points": "214",
+      "Difference": "4",
+      "Running Total": "7994"
+    },
+    {
+      "Level": "71",
+      "Bonus": "35.5%",
+      "Points": "218",
+      "Difference": "4",
+      "Running Total": "8212"
+    },
+    {
+      "Level": "72",
+      "Bonus": "36.0%",
+      "Points": "222",
+      "Difference": "4",
+      "Running Total": "8434"
+    },
+    {
+      "Level": "73",
+      "Bonus": "36.5%",
+      "Points": "226",
+      "Difference": "4",
+      "Running Total": "8660"
+    },
+    {
+      "Level": "74",
+      "Bonus": "37.0%",
+      "Points": "230",
+      "Difference": "4",
+      "Running Total": "8890"
+    },
+    {
+      "Level": "75",
+      "Bonus": "37.5%",
+      "Points": "234",
+      "Difference": "4",
+      "Running Total": "9124"
+    },
+    {
+      "Level": "76",
+      "Bonus": "38.0%",
+      "Points": "238",
+      "Difference": "4",
+      "Running Total": "9362"
+    },
+    {
+      "Level": "77",
+      "Bonus": "38.5%",
+      "Points": "242",
+      "Difference": "4",
+      "Running Total": "9604"
+    },
+    {
+      "Level": "78",
+      "Bonus": "39.0%",
+      "Points": "246",
+      "Difference": "4",
+      "Running Total": "9850"
+    },
+    {
+      "Level": "79",
+      "Bonus": "39.5%",
+      "Points": "250",
+      "Difference": "4",
+      "Running Total": "10100"
+    },
+    {
+      "Level": "80",
+      "Bonus": "40.0%",
+      "Points": "255",
+      "Difference": "5",
+      "Running Total": "10355"
+    },
+    {
+      "Level": "81",
+      "Bonus": "40.5%",
+      "Points": "260",
+      "Difference": "5",
+      "Running Total": "10615"
+    },
+    {
+      "Level": "82",
+      "Bonus": "41.0%",
+      "Points": "265",
+      "Difference": "5",
+      "Running Total": "10880"
+    },
+    {
+      "Level": "83",
+      "Bonus": "41.5%",
+      "Points": "270",
+      "Difference": "5",
+      "Running Total": "11150"
+    },
+    {
+      "Level": "84",
+      "Bonus": "42.0%",
+      "Points": "275",
+      "Difference": "5",
+      "Running Total": "11425"
+    },
+    {
+      "Level": "85",
+      "Bonus": "42.5%",
+      "Points": "280",
+      "Difference": "5",
+      "Running Total": "11705"
+    },
+    {
+      "Level": "86",
+      "Bonus": "43.0%",
+      "Points": "285",
+      "Difference": "5",
+      "Running Total": "11990"
+    },
+    {
+      "Level": "87",
+      "Bonus": "43.5%",
+      "Points": "290",
+      "Difference": "5",
+      "Running Total": "12280"
+    },
+    {
+      "Level": "88",
+      "Bonus": "44.0%",
+      "Points": "295",
+      "Difference": "5",
+      "Running Total": "12575"
+    },
+    {
+      "Level": "89",
+      "Bonus": "44.5%",
+      "Points": "300",
+      "Difference": "5",
+      "Running Total": "12875"
+    },
+    {
+      "Level": "90",
+      "Bonus": "45.0%",
+      "Points": "305",
+      "Difference": "5",
+      "Running Total": "13180"
+    },
+    {
+      "Level": "91",
+      "Bonus": "45.5%",
+      "Points": "310",
+      "Difference": "5",
+      "Running Total": "13490"
+    },
+    {
+      "Level": "92",
+      "Bonus": "46.0%",
+      "Points": "315",
+      "Difference": "5",
+      "Running Total": "13805"
+    },
+    {
+      "Level": "93",
+      "Bonus": "46.5%",
+      "Points": "320",
+      "Difference": "5",
+      "Running Total": "14125"
+    },
+    {
+      "Level": "94",
+      "Bonus": "47.0%",
+      "Points": "325",
+      "Difference": "5",
+      "Running Total": "14450"
+    },
+    {
+      "Level": "95",
+      "Bonus": "47.5%",
+      "Points": "330",
+      "Difference": "5",
+      "Running Total": "14780"
+    },
+    {
+      "Level": "96",
+      "Bonus": "48.0%",
+      "Points": "335",
+      "Difference": "5",
+      "Running Total": "15115"
+    },
+    {
+      "Level": "97",
+      "Bonus": "48.5%",
+      "Points": "340",
+      "Difference": "5",
+      "Running Total": "15455"
+    },
+    {
+      "Level": "98",
+      "Bonus": "49.0%",
+      "Points": "345",
+      "Difference": "5",
+      "Running Total": "15800"
+    },
+    {
+      "Level": "99",
+      "Bonus": "49.5%",
+      "Points": "350",
+      "Difference": "5",
+      "Running Total": "16150"
+    },
+    {
+      "Level": "100",
+      "Bonus": "50.0%",
+      "Points": "356",
+      "Difference": "6",
+      "Running Total": "16506"
+    },
+    {
+      "Level": "101",
+      "Bonus": "50.5%",
+      "Points": "362",
+      "Difference": "6",
+      "Running Total": "16868"
+    },
+    {
+      "Level": "102",
+      "Bonus": "51.0%",
+      "Points": "368",
+      "Difference": "6",
+      "Running Total": "17236"
+    },
+    {
+      "Level": "103",
+      "Bonus": "51.5%",
+      "Points": "374",
+      "Difference": "6",
+      "Running Total": "17610"
+    },
+    {
+      "Level": "104",
+      "Bonus": "52.0%",
+      "Points": "380",
+      "Difference": "6",
+      "Running Total": "17990"
+    },
+    {
+      "Level": "105",
+      "Bonus": "52.5%",
+      "Points": "386",
+      "Difference": "6",
+      "Running Total": "18376"
+    },
+    {
+      "Level": "106",
+      "Bonus": "53.0%",
+      "Points": "392",
+      "Difference": "6",
+      "Running Total": "18768"
+    },
+    {
+      "Level": "107",
+      "Bonus": "53.5%",
+      "Points": "398",
+      "Difference": "6",
+      "Running Total": "19166"
+    },
+    {
+      "Level": "108",
+      "Bonus": "54.0%",
+      "Points": "404",
+      "Difference": "6",
+      "Running Total": "19570"
+    },
+    {
+      "Level": "109",
+      "Bonus": "54.5%",
+      "Points": "410",
+      "Difference": "6",
+      "Running Total": "19980"
+    },
+    {
+      "Level": "110",
+      "Bonus": "55.0%",
+      "Points": "416",
+      "Difference": "6",
+      "Running Total": "20396"
+    },
+    {
+      "Level": "111",
+      "Bonus": "55.5%",
+      "Points": "422",
+      "Difference": "6",
+      "Running Total": "20818"
+    },
+    {
+      "Level": "112",
+      "Bonus": "56.0%",
+      "Points": "428",
+      "Difference": "6",
+      "Running Total": "21246"
+    },
+    {
+      "Level": "113",
+      "Bonus": "56.5%",
+      "Points": "434",
+      "Difference": "6",
+      "Running Total": "21680"
+    },
+    {
+      "Level": "114",
+      "Bonus": "57.0%",
+      "Points": "440",
+      "Difference": "6",
+      "Running Total": "22120"
+    },
+    {
+      "Level": "115",
+      "Bonus": "57.5%",
+      "Points": "446",
+      "Difference": "6",
+      "Running Total": "22566"
+    },
+    {
+      "Level": "116",
+      "Bonus": "58.0%",
+      "Points": "452",
+      "Difference": "6",
+      "Running Total": "23018"
+    },
+    {
+      "Level": "117",
+      "Bonus": "58.5%",
+      "Points": "458",
+      "Difference": "6",
+      "Running Total": "23476"
+    },
+    {
+      "Level": "118",
+      "Bonus": "59.0%",
+      "Points": "464",
+      "Difference": "6",
+      "Running Total": "23940"
+    },
+    {
+      "Level": "119",
+      "Bonus": "59.5%",
+      "Points": "470",
+      "Difference": "6",
+      "Running Total": "24410"
+    },
+    {
+      "Level": "120",
+      "Bonus": "60.0%",
+      "Points": "477",
+      "Difference": "7",
+      "Running Total": "24887"
+    },
+    {
+      "Level": "121",
+      "Bonus": "60.5%",
+      "Points": "484",
+      "Difference": "7",
+      "Running Total": "25371"
+    },
+    {
+      "Level": "122",
+      "Bonus": "61.0%",
+      "Points": "491",
+      "Difference": "7",
+      "Running Total": "25862"
+    },
+    {
+      "Level": "123",
+      "Bonus": "61.5%",
+      "Points": "498",
+      "Difference": "7",
+      "Running Total": "26360"
+    },
+    {
+      "Level": "124",
+      "Bonus": "62.0%",
+      "Points": "505",
+      "Difference": "7",
+      "Running Total": "26865"
+    },
+    {
+      "Level": "125",
+      "Bonus": "62.5%",
+      "Points": "512",
+      "Difference": "7",
+      "Running Total": "27377"
+    },
+    {
+      "Level": "126",
+      "Bonus": "63.0%",
+      "Points": "519",
+      "Difference": "7",
+      "Running Total": "27896"
+    },
+    {
+      "Level": "127",
+      "Bonus": "63.5%",
+      "Points": "526",
+      "Difference": "7",
+      "Running Total": "28422"
+    },
+    {
+      "Level": "128",
+      "Bonus": "64.0%",
+      "Points": "533",
+      "Difference": "7",
+      "Running Total": "28955"
+    },
+    {
+      "Level": "129",
+      "Bonus": "64.5%",
+      "Points": "540",
+      "Difference": "7",
+      "Running Total": "29495"
+    },
+    {
+      "Level": "130",
+      "Bonus": "65.0%",
+      "Points": "547",
+      "Difference": "7",
+      "Running Total": "30042"
+    },
+    {
+      "Level": "131",
+      "Bonus": "65.5%",
+      "Points": "554",
+      "Difference": "7",
+      "Running Total": "30596"
+    },
+    {
+      "Level": "132",
+      "Bonus": "66.0%",
+      "Points": "561",
+      "Difference": "7",
+      "Running Total": "31157"
+    },
+    {
+      "Level": "133",
+      "Bonus": "66.5%",
+      "Points": "568",
+      "Difference": "7",
+      "Running Total": "31725"
+    },
+    {
+      "Level": "134",
+      "Bonus": "67.0%",
+      "Points": "575",
+      "Difference": "7",
+      "Running Total": "32300"
+    },
+    {
+      "Level": "135",
+      "Bonus": "67.5%",
+      "Points": "582",
+      "Difference": "7",
+      "Running Total": "32882"
+    },
+    {
+      "Level": "136",
+      "Bonus": "68.0%",
+      "Points": "589",
+      "Difference": "7",
+      "Running Total": "33471"
+    },
+    {
+      "Level": "137",
+      "Bonus": "68.5%",
+      "Points": "596",
+      "Difference": "7",
+      "Running Total": "34067"
+    },
+    {
+      "Level": "138",
+      "Bonus": "69.0%",
+      "Points": "603",
+      "Difference": "7",
+      "Running Total": "34670"
+    },
+    {
+      "Level": "139",
+      "Bonus": "69.5%",
+      "Points": "610",
+      "Difference": "7",
+      "Running Total": "35280"
+    },
+    {
+      "Level": "140",
+      "Bonus": "70.0%",
+      "Points": "618",
+      "Difference": "8",
+      "Running Total": "35898"
+    },
+    {
+      "Level": "141",
+      "Bonus": "70.5%",
+      "Points": "626",
+      "Difference": "8",
+      "Running Total": "36524"
+    },
+    {
+      "Level": "142",
+      "Bonus": "71.0%",
+      "Points": "634",
+      "Difference": "8",
+      "Running Total": "37158"
+    },
+    {
+      "Level": "143",
+      "Bonus": "71.5%",
+      "Points": "642",
+      "Difference": "8",
+      "Running Total": "37800"
+    },
+    {
+      "Level": "144",
+      "Bonus": "72.0%",
+      "Points": "650",
+      "Difference": "8",
+      "Running Total": "38450"
+    },
+    {
+      "Level": "145",
+      "Bonus": "72.5%",
+      "Points": "658",
+      "Difference": "8",
+      "Running Total": "39108"
+    },
+    {
+      "Level": "146",
+      "Bonus": "73.0%",
+      "Points": "666",
+      "Difference": "8",
+      "Running Total": "39774"
+    },
+    {
+      "Level": "147",
+      "Bonus": "73.5%",
+      "Points": "674",
+      "Difference": "8",
+      "Running Total": "40448"
+    },
+    {
+      "Level": "148",
+      "Bonus": "74.0%",
+      "Points": "682",
+      "Difference": "8",
+      "Running Total": "41130"
+    },
+    {
+      "Level": "149",
+      "Bonus": "74.5%",
+      "Points": "690",
+      "Difference": "8",
+      "Running Total": "41820"
+    },
+    {
+      "Level": "150",
+      "Bonus": "75.0%",
+      "Points": "698",
+      "Difference": "8",
+      "Running Total": "42518"
+    },
+    {
+      "Level": "151",
+      "Bonus": "75.5%",
+      "Points": "706",
+      "Difference": "8",
+      "Running Total": "43224"
+    },
+    {
+      "Level": "152",
+      "Bonus": "76.0%",
+      "Points": "714",
+      "Difference": "8",
+      "Running Total": "43938"
+    },
+    {
+      "Level": "153",
+      "Bonus": "76.5%",
+      "Points": "722",
+      "Difference": "8",
+      "Running Total": "44660"
+    },
+    {
+      "Level": "154",
+      "Bonus": "77.0%",
+      "Points": "730",
+      "Difference": "8",
+      "Running Total": "45390"
+    },
+    {
+      "Level": "155",
+      "Bonus": "77.5%",
+      "Points": "738",
+      "Difference": "8",
+      "Running Total": "46128"
+    },
+    {
+      "Level": "156",
+      "Bonus": "78.0%",
+      "Points": "746",
+      "Difference": "8",
+      "Running Total": "46874"
+    },
+    {
+      "Level": "157",
+      "Bonus": "78.5%",
+      "Points": "754",
+      "Difference": "8",
+      "Running Total": "47628"
+    },
+    {
+      "Level": "158",
+      "Bonus": "79.0%",
+      "Points": "762",
+      "Difference": "8",
+      "Running Total": "48390"
+    },
+    {
+      "Level": "159",
+      "Bonus": "79.5%",
+      "Points": "770",
+      "Difference": "8",
+      "Running Total": "49160"
+    },
+    {
+      "Level": "160",
+      "Bonus": "80.0%",
+      "Points": "779",
+      "Difference": "9",
+      "Running Total": "49939"
+    },
+    {
+      "Level": "161",
+      "Bonus": "80.5%",
+      "Points": "788",
+      "Difference": "9",
+      "Running Total": "50727"
+    },
+    {
+      "Level": "162",
+      "Bonus": "81.0%",
+      "Points": "797",
+      "Difference": "9",
+      "Running Total": "51524"
+    },
+    {
+      "Level": "163",
+      "Bonus": "81.5%",
+      "Points": "806",
+      "Difference": "9",
+      "Running Total": "52330"
+    },
+    {
+      "Level": "164",
+      "Bonus": "82.0%",
+      "Points": "815",
+      "Difference": "9",
+      "Running Total": "53145"
+    },
+    {
+      "Level": "165",
+      "Bonus": "82.5%",
+      "Points": "824",
+      "Difference": "9",
+      "Running Total": "53969"
+    },
+    {
+      "Level": "166",
+      "Bonus": "83.0%",
+      "Points": "833",
+      "Difference": "9",
+      "Running Total": "54802"
+    },
+    {
+      "Level": "167",
+      "Bonus": "83.5%",
+      "Points": "842",
+      "Difference": "9",
+      "Running Total": "55644"
+    },
+    {
+      "Level": "168",
+      "Bonus": "84.0%",
+      "Points": "851",
+      "Difference": "9",
+      "Running Total": "56495"
+    },
+    {
+      "Level": "169",
+      "Bonus": "84.5%",
+      "Points": "860",
+      "Difference": "9",
+      "Running Total": "57355"
+    },
+    {
+      "Level": "170",
+      "Bonus": "85.0%",
+      "Points": "869",
+      "Difference": "9",
+      "Running Total": "58224"
+    },
+    {
+      "Level": "171",
+      "Bonus": "85.5%",
+      "Points": "878",
+      "Difference": "9",
+      "Running Total": "59102"
+    },
+    {
+      "Level": "172",
+      "Bonus": "86.0%",
+      "Points": "887",
+      "Difference": "9",
+      "Running Total": "59989"
+    },
+    {
+      "Level": "173",
+      "Bonus": "86.5%",
+      "Points": "896",
+      "Difference": "9",
+      "Running Total": "60885"
+    },
+    {
+      "Level": "174",
+      "Bonus": "87.0%",
+      "Points": "905",
+      "Difference": "9",
+      "Running Total": "61790"
+    },
+    {
+      "Level": "175",
+      "Bonus": "87.5%",
+      "Points": "914",
+      "Difference": "9",
+      "Running Total": "62704"
+    },
+    {
+      "Level": "176",
+      "Bonus": "88.0%",
+      "Points": "923",
+      "Difference": "9",
+      "Running Total": "63627"
+    },
+    {
+      "Level": "177",
+      "Bonus": "88.5%",
+      "Points": "932",
+      "Difference": "9",
+      "Running Total": "64559"
+    },
+    {
+      "Level": "178",
+      "Bonus": "89.0%",
+      "Points": "941",
+      "Difference": "9",
+      "Running Total": "65500"
+    },
+    {
+      "Level": "179",
+      "Bonus": "89.5%",
+      "Points": "950",
+      "Difference": "9",
+      "Running Total": "66450"
+    },
+    {
+      "Level": "180",
+      "Bonus": "90.0%",
+      "Points": "960",
+      "Difference": "10",
+      "Running Total": "67410"
+    },
+    {
+      "Level": "181",
+      "Bonus": "90.5%",
+      "Points": "970",
+      "Difference": "10",
+      "Running Total": "68380"
+    },
+    {
+      "Level": "182",
+      "Bonus": "91.0%",
+      "Points": "980",
+      "Difference": "10",
+      "Running Total": "69360"
+    },
+    {
+      "Level": "183",
+      "Bonus": "91.5%",
+      "Points": "990",
+      "Difference": "10",
+      "Running Total": "70350"
+    },
+    {
+      "Level": "184",
+      "Bonus": "92.0%",
+      "Points": "1000",
+      "Difference": "10",
+      "Running Total": "71350"
+    },
+    {
+      "Level": "185",
+      "Bonus": "92.5%",
+      "Points": "1010",
+      "Difference": "10",
+      "Running Total": "72360"
+    },
+    {
+      "Level": "186",
+      "Bonus": "93.0%",
+      "Points": "1020",
+      "Difference": "10",
+      "Running Total": "73380"
+    },
+    {
+      "Level": "187",
+      "Bonus": "93.5%",
+      "Points": "1030",
+      "Difference": "10",
+      "Running Total": "74410"
+    },
+    {
+      "Level": "188",
+      "Bonus": "94.0%",
+      "Points": "1040"
+    },
+    {
+      "Level": "189",
+      "Bonus": "94.5%",
+      "Points": "1050"
+    },
+    {
+      "Level": "190",
+      "Bonus": "95.0%",
+      "Points": "1060"
+    },
+    {
+      "Level": "191",
+      "Bonus": "95.5%",
+      "Points": "1070"
+    },
+    {
+      "Level": "192",
+      "Bonus": "96.0%",
+      "Points": "1025"
+    },
+    {
+      "Level": "193",
+      "Bonus": "96.5%",
+      "Points": "1035"
+    },
+    {
+      "Level": "194",
+      "Bonus": "97.0%",
+      "Points": "1045"
+    },
+    {
+      "Level": "195",
+      "Bonus": "97.5%",
+      "Points": "1055"
+    },
+    {
+      "Level": "196",
+      "Bonus": "98.0%",
+      "Points": "1065"
+    },
+    {
+      "Level": "197",
+      "Bonus": "98.5%",
+      "Points": "1075"
+    },
+    {
+      "Level": "198",
+      "Bonus": "99.0%",
+      "Points": "1085"
+    },
+    {
+      "Level": "199",
+      "Bonus": "99.5%",
+      "Points": "1095"
+    },
+    {
+      "Level": "200",
+      "Bonus": "100.0%",
+      "Points": "1106"
+    }
+  ]
+}
