@@ -1,0 +1,162 @@
+[
+  {
+    "Name": "Duke Zhi",
+    "Trait": ["Wis", "Aut"],
+    "Potential": {
+      "Wis": 650,
+      "Pol": 598,
+      "Cha": 630,
+      "Aut": 753
+    },
+    "Attribute": {
+      "Wis": 31453658,
+      "Pol": 28343993,
+      "Cha": 29835732,
+      "Aut": 47469202
+    }
+  },
+  {
+    "Name": "Prince Yi",
+    "Trait": ["Bal"],
+    "Potential": {
+      "Wis": 698,
+      "Pol": 919,
+      "Cha": 768,
+      "Aut": 706
+    },
+    "Attribute": {
+      "Wis": 48391275,
+      "Pol": 74857640,
+      "Cha": 60921151,
+      "Aut": 48675041
+    }
+  },
+  {
+    "Name": "Liang Hongyu",
+    "Trait": ["Bal"],
+    "Potential": {
+      "Wis": 1035,
+      "Pol": 725,
+      "Cha": 756,
+      "Aut": 736
+    },
+    "Attribute": {
+      "Wis": 77432237,
+      "Pol": 45399133,
+      "Cha": 47340054,
+      "Aut": 53132657
+    }
+  },
+  {
+    "Name": "Duke Jing",
+    "Trait": ["Aut"],
+    "Potential": {
+      "Wis": 600,
+      "Pol": 602,
+      "Cha": 625,
+      "Aut": 819
+    },
+    "Attribute": {
+      "Wis": 36520125,
+      "Pol": 36533930,
+      "Cha": 37917921,
+      "Aut": 64047112
+    }
+  },
+  {
+    "Name": "Prince Gong",
+    "Trait": ["Pol", "Cha"],
+    "Potential": {
+      "Wis": 574,
+      "Pol": 685,
+      "Cha": 728,
+      "Aut": 560
+    },
+    "Attribute": {
+      "Wis": 30748182,
+      "Pol": 43778171,
+      "Cha": 47484227,
+      "Aut": 29899099
+    }
+  },
+  {
+    "Name": "Duke Dun",
+    "Trait": ["Pol", "Aut"],
+    "Potential": {
+      "Wis": 568,
+      "Pol": 618,
+      "Cha": 578,
+      "Aut": 656
+    },
+    "Attribute": {
+      "Wis": 29035185,
+      "Pol": 31711011,
+      "Cha": 29481006,
+      "Aut": 42732181
+    }
+  },
+  {
+    "Name": "Duke Xun",
+    "Trait": ["Cha", "Aut"],
+    "Potential": {
+      "Wis": 545,
+      "Pol": 537,
+      "Cha": 591,
+      "Aut": 632
+    },
+    "Attribute": {
+      "Wis": 21623795,
+      "Pol": 21430721,
+      "Cha": 24006088,
+      "Aut": 33275628
+    }
+  },
+  {
+    "Name": "Shangguan WanEr",
+    "Trait": ["War"],
+    "Potential": {
+      "Wis": 598,
+      "Pol": 612,
+      "Cha": 619,
+      "Aut": 632
+    },
+    "Attribute": {
+      "Wis": 24311919,
+      "Pol": 25353474,
+      "Cha": 25139027,
+      "Aut": 25510984
+    }
+  },
+  {
+    "Name": "Fan LiHua",
+    "Trait": ["War"],
+    "Potential": {
+      "Wis": 494,
+      "Pol": 498,
+      "Cha": 504,
+      "Aut": 513
+    },
+    "Attribute": {
+      "Wis": 20321719,
+      "Pol": 20696054,
+      "Cha": 21048619,
+      "Aut": 21055703
+    }
+  },
+  {
+    "Name": "Mu Guiying",
+    "Trait": ["Bal"],
+    "Potential": {
+      "Wis": 514,
+      "Pol": 434,
+      "Cha": 436,
+      "Aut": 423
+    },
+    "Attribute": {
+      "Wis": 25378164,
+      "Pol": 16908660,
+      "Cha": 16926407,
+      "Aut": 20282908
+    }
+  }
+]
